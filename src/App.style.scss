@@ -1,0 +1,196 @@
+.App {
+  display: flex;
+  flex-direction: column;
+text-align: center;
+font-family: "Poppins", Arial, sans-serif;
+
+}
+a{
+  text-decoration: none;
+}
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 5px solid #39379B;
+  border-left-color: white;
+  border-radius: 50%;
+  background: transparent;
+  animation-name: rotate-s-loader;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  position: relative;
+}
+.menu{
+  position: sticky;
+  top: 55px;
+  align-self: flex-end;
+  margin-bottom: -60px;
+  height: 30px;
+  width: 30px;
+  right: 20px;
+  z-index: 9999;
+  cursor: pointer;
+  background-color: black;
+}
+.Secondary_Button{
+  background-color: rgba($color: #39379B, $alpha: .3);
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Primary_Button{
+  margin-top: 25px;
+  background-color: rgb(96, 95, 175);
+  cursor: pointer;
+  border: none;
+  color: #DBE4F4;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.Tertiary_Button{
+  background-color: rgba($color: #39379B, $alpha: .8);
+  border: none;
+  color: white;
+  font-size: 14px;
+  padding: 7px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.menu{
+  position: sticky;
+  top: 10px;
+}
+.icons{
+  margin: 0 5px;
+  color: black !important;
+  padding: 9px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 30px;
+  border-radius: 5px;
+  z-index: 999;
+  cursor: pointer;
+  img{
+      height: 30px;
+      padding: 0 3px;
+  }
+}
+
+@keyframes stretchs2 {
+  0% { padding: 15px 80px; }
+  80% {  padding: 20px 85px; margin-left: -5px; margin-top: -5px; font-size: 1.1rem; }
+  100% {  padding: 15px 80px;  }  
+}  
+
+.btn-0 {
+  display: inline-block;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem; 
+  letter-spacing: .1rem;
+  transition: all .6s;
+  position: relative;
+  overflow: hidden;
+  padding: 15px;
+  z-index: 1;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #39379B;
+    transition: all .6s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  &:hover {
+    color: #fff;
+    &:before {
+      width: 100%;
+    }
+  }
+}
+.btn-1 {
+  display: inline-block;
+  border-radius: 5px;
+  color: #fff;
+  font-size: .8rem; 
+  transition: all .4s;
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  z-index: 1;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    z-index: -2;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #39379B;
+    transition: all .4s;
+    border-radius: 5px;
+    z-index: -1;
+  }
+  &:hover {
+    color: #fff;
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+// ----------------- Media Query ------------------- //
+
+@media only screen and (max-width: 800px) {
+  .iconsmobile{
+    padding: 0 ;  
+    height: 30px !important;
+    width: 30px !important;
+  }
+   @keyframes stretchs2 {
+      0% { padding: 12px 50px; }
+      60% {  padding: 15px 55px; margin-left: -5px; margin-top: -5px; font-size: 1.1rem;  }
+      100% {  padding: 12px 50px;  }  
+  }  
+}
+@media only screen and (max-width: 600px) {
+  .icons2{
+    margin: 0 5px;
+    padding: 5px 3px;
+    height: 25px;
+    img{
+        height: 25px;
+        padding: 0 3px;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.ProjectPage_Container{
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    h1{
+        color: #605FAF;
+    }
+    span{
+        color: #605FAF;
+    }
+    p{
+        font-weight: 600;
+        padding : 0 !important;
+
+    }
+    .p{
+        margin-top: -35px !important;
+    }
+    li{
+        margin: 10px;
+        font-weight: 300;
+    }
+    .date{
+        color: #4C4C4C;
+        font-weight: 400;
+    }
+    .row1{
+        display: flex;
+        justify-content: center;
+        margin-top: 140px;
+        align-items: flex-start;
+        .Images_container{
+            padding: 30px 0;
+            .rendered_images{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .Images{
+                display: flex;
+                width: 600px;
+                overflow: scroll;
+                .image{
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                    margin-top: 20px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+            }
+            button{
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                margin: 0 20px;
+            }
+            .first_image{
+                width: 600px;
+                height: 500px;
+                object-fit: cover;
+                object-position: 50% 50%;
+                
+            }
+        }
+    
+        .description{
+            max-width: 37vw;
+            margin-top: 30px;
+            height: 500px;
+            overflow-y: scroll;
+            text-align: left;
+            margin-left: 20px;
+        }
+    }
+  
+
+   
+}

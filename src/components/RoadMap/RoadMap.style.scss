@@ -1,0 +1,35 @@
+.RoadMap_Container{
+    background-color: rgba($color: #39379B, $alpha: .2);
+    width: 100%;
+    padding: 200px 0;
+    color: BLACK;
+    p{
+        width: 470px;
+
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    .desc{
+        margin-left: 80px;
+        margin-bottom: -80px;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(4, 20vw);
+        justify-items: center;
+        margin-top: 50px;
+    }
+}
+// ----------------- Media Query ------------------- //
+
+@media only screen and (max-width: 800px) {
+    .RoadMap_Container{
+ 
+        p{
+            width: 60vw;
+        }
+    }
+    
+}

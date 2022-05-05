@@ -1,0 +1,175 @@
+.Header_Container{
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end ;
+    align-items: center;
+    height: 90vh;
+    margin-bottom: 20px;
+    border-bottom: 0px solid blue;
+    .play_img{
+        height: 60px;
+        margin: 0 100px;
+    }
+    .text2{
+        line-height: 1.4em;
+    }
+    .corousel_image{
+        width: 100vw;
+        height: 90vh;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.2rem;
+        p{
+        }
+        .Description{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 400px;
+            justify-content: center;
+            .text1{
+                font-size: .8em;
+                font-weight: 500;
+            }
+            p, h2{
+                margin: 10px 0;
+            }
+        }
+    }
+    .Carousel{
+        position: absolute;
+        display: flex;
+        top: 0;
+            left: 0;
+    }
+    .logo{
+        justify-self: center;
+        margin-left: 20px;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .social_icons{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .firstRow{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 50vh;
+    }
+    .logo2{
+        margin-left: 20px;
+        justify-self: flex-start;
+    }
+    button{
+        border-radius: 5px;
+        justify-self: center;
+        animation-name: stretchs2;
+        position: absolute;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        border: none;
+    }
+    .animate2{
+        animation-name: stretchs2;
+        opacity: .4;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    a{
+        text-decoration: none;
+    }
+ 
+}
+
+.pentagon {
+    width: 100vw;
+    display: flex;
+    align-self: flex-end;
+    height: 115px;
+    margin-top: 80px;
+  }
+  .pentagon:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0vw;
+    border-width: 0 51vw 115px 0vw;
+    border-style: solid;
+    border-color: transparent transparent white;
+  }
+  .pentagon:after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0vw;
+    border-width: 0 50vw 115px 0vw;
+    border-style: solid;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    right: 0;
+    border-color: transparent transparent white;
+  }
+  // ----------------- Media Query ------------------- //
+
+@media only screen and (max-width: 700px) {
+    .Header_Container{
+        .logo{
+            display: none;
+        }
+        .social_icons{
+            justify-self: flex-start;
+        }
+        .play_img{
+            margin: 0 50px;
+        }
+        .Description{
+            padding: 0 30px;
+        }
+     
+    }
+    
+}
+@media only screen and (min-width: 701px) {
+    .Header_Container{
+        .logo2{
+            display: none;
+        }
+      
+        
+    }
+    
+}
+@media only screen and (max-width: 601px) {
+    .Header_Container{
+        .play_img{
+            margin: 0 30px;
+        }
+        .Description{
+            padding: 0;
+            padding-right: 20px;
+        }
+    }
+    
+}
+@media only screen and (max-width: 415px) {
+    .Header_Container{
+        .play_img{
+            margin: 0 20px;
+        }
+      
+    }
+    
+}

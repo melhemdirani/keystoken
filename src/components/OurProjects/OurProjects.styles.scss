@@ -1,0 +1,10 @@
+.OurPorjects_Container{
+    margin-bottom: 100px;
+    .projects{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 100px 0;
+    }
+    
+}

@@ -1,0 +1,24 @@
+.Bar_Container{
+    background-color: #3B3B3B;
+    width: 35vw;
+    max-width: 500px;
+    border-radius: 20px;
+    text-align: right;
+    div{
+        border-radius: 20px;
+        background-color: #EAA832;
+        background:  linear-gradient(to right, #EDAE3F , #F1C87F);
+        p{
+            margin-right: 5px;
+            color: black;
+        }
+    }
+}
+// ----------------- Media Query ------------------- //
+
+@media only screen and (max-width: 600px) {
+    .Bar_Container{
+        width: 80vw;
+    }
+    
+}

@@ -1,0 +1,58 @@
+.RoadMapCard_Container{
+    width: 250px;
+    border-radius: 10px;
+    height: 280px;
+    background-color: rgba($color: #39379B, $alpha: .9);
+    background-size: 100% 100%;
+    margin: 60px 0;
+    max-width: 70vw;
+    padding: 20px 0 0 0; 
+    color: white;
+    margin-bottom: -24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+
+
+    p{
+        line-height: 1.6em !important;
+        max-width: 230px;
+
+    }
+    h3{
+        color: white;
+        font-size: 1.5em;
+        margin: 5px 0;
+    }
+}
+
+// ----------------- Media Query ------------------- //
+
+@media only screen and (max-width: 600px) {
+    .RoadMapCard_Container{
+        padding-left: 30px;
+        padding-right: 10px;
+        .description{
+            margin-left: 30px;
+        }
+        p{
+            font-size: .8rem;
+    
+        }
+    }
+}
+@media only screen and (max-width: 350px) {
+    .RoadMapCard_Container{
+        padding-left: 30px;
+        padding-right: 10px;
+        .description{
+            margin-left: 30px;
+        }
+        p{
+            font-size: .7rem;
+    
+        }
+    }
+}

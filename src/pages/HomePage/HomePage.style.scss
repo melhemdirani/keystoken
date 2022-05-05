@@ -1,0 +1,11 @@
+.HomePage_Container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    .EPC{
+        height: 500px;
+        align-self: center;
+        width: auto;
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,188 @@
+.AboutusPage_Container{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    li{
+        line-height: 1.4em;
+    }
+
+    .special_p{
+        margin: 0;
+    }
+    h2{
+        margin: 0;
+        color: #605FAF;
+    }
+    align-items: center;
+    .header{
+        background-image: linear-gradient(rgba($color: #39379B, $alpha: .3), rgba($color: #39379B, $alpha: .5)),  url('../../assets/images/dream.jpg');
+        height: 80VH;
+        background-attachment: fixed;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        color: white;
+        width: 100%;
+        .link, h1{
+            margin-left: 50px;
+        }
+        h1{
+            margin-bottom: 80px;
+        }
+        .link{
+            display: flex;
+            p{
+                margin: 0
+            }
+            a{
+                margin-right: 5px;
+                color: white;
+            }
+        }
+    }
+    .row1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 80px 0;
+        max-width: 90%;
+        .img{
+            width: 600px;
+            height: 500px;
+            margin: 0 20px;
+            object-fit: cover;
+        }
+
+    }
+    .reverse{
+        flex-direction: row-reverse;
+        margin-top: 0;
+    }
+   
+    .description{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0 20px;
+        text-align: justify;
+        p{
+            line-height: 1.8rem;
+        }
+        button{
+            align-self: flex-start;
+        }
+        .scope{
+            font-weight: 600;
+            color: #605FAF;
+            margin: 0;
+            span{
+                font-weight: normal;
+                color: rgba($color: #000000, $alpha: .8);
+            }
+        }
+        h2{
+            margin-bottom: 10px;
+        }
+    }
+    .description2{
+        color: white;
+        background-image: linear-gradient(rgba($color: #39379B, $alpha: .3), rgba($color: #39379B, $alpha: .5)),  url('../../assets/images/dream.jpg');
+        padding: 80px 0;
+        width: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+        font-size: 1.4rem;
+        h2, p{
+            margin-left: 50px;
+            color: white;
+            text-align: center;
+        }
+    }
+    .reduced{
+        p{
+            margin: 5px 0;
+        }
+    }
+
+}
+.curve{
+    clip-path: ellipse(85% 100% at 50% 0%);
+    background-color: white;
+    height: 200px;
+    width: 100%;
+    margin: -210px 0 -50px 0;
+}
+.clients_container{
+    margin-bottom: 80px;
+    background-color: white;
+    padding-bottom: 140px;
+    width: 75%;
+    .slowRotate1{
+        animation: rotate1;
+        animation-duration: .4s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+    }
+    .slowRotate2{
+        transform: rotate(90deg);
+        animation: rotate2;
+        animation-duration: .4s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes rotate1 {
+        0%{transform: rotate(90deg);}
+        100%{transform: rotate(0deg);}
+    }
+    @keyframes rotate2 {
+        0%{transform: rotate(0deg);}
+        100%{transform: rotate(90deg);}
+    }
+    .DropDown_Contianer{
+        h3{
+            color: white;
+            background-color: rgba($color: #39379B, $alpha: .9);
+            padding: 15px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            justify-content: space-between;
+        }
+        .clients{
+            display: grid;
+            grid-template-columns: repeat(5, auto);
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .images{
+                height: 80px;
+                width: 200px;
+                object-fit: contain;
+                margin: 20px 10px;
+            }
+            p{
+                color: white;
+                border-radius: 5px;
+                width: 150px;
+                padding: 15px 25px;
+                text-align: center;
+                font-size: .9em;
+                line-height: 1.5em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgba($color: #39379B, $alpha: .9);
+                
+            }
+        }
+        span{
+            font-size: 1.4em;
+        }
+    }
+}

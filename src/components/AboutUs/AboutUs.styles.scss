@@ -1,0 +1,102 @@
+.AboutUs_Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 120px 0;
+    h2{
+      color: rgba($color: #605FAF, $alpha: 1);  
+    }
+    .EPC{
+        height: 600px;
+    }
+    .Primary_Button{
+        align-self: flex-start;
+    }
+    .row1{
+        .img{
+            width: 550px;
+            height: 400px;
+            margin: 0 30px;
+            object-fit: cover;
+        }
+        .background{
+            height: 300px;
+            width: 500px;
+            margin-top: -280px;
+            background-color: rgba($color: #39379B, $alpha: .3);
+            position: absolute;
+            z-index: -10;
+        }
+    }
+   
+    .description{
+        max-width: 500px;
+        margin: 0 30px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        p{
+            line-height: 1.7rem;
+            margin: 5px 0;
+        }
+        a{
+            align-self: flex-start;
+        }
+    }
+ 
+}
+// ----------------- Media Query ------------------- //
+
+@media only screen and (max-width: 1140px) {
+    .AboutUs_Container{
+
+        .row1{
+            margin: 0 10px;
+            .img{
+                width:450px;
+            }
+            .background{
+                width: 450px;
+            }
+        }
+        .description{
+            max-width: 39vw;
+            margin: 0;
+            p{
+                margin: 3px 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .AboutUs_Container{
+        flex-direction: column;
+        .row1{
+            margin: 0;
+            margin-bottom: 100px;
+            .img{
+                width:80vw;
+                margin: 0;
+                height: auto;
+            }
+            .background{
+                display: none;
+            }
+          
+        }
+        .description{
+            max-width: 80vw;
+            align-items: center;
+            text-align: justify;
+            h2{
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            a{
+                align-self: center;
+            }
+        }
+    }
+}
