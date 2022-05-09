@@ -1,5 +1,5 @@
 .Footer_Container{
-    background-color: #605FAF; 
+    background-color: #4847A2; 
     color: white;
     display: flex;
     padding: 40px 0;
@@ -10,9 +10,11 @@
         color: inherit;
     }
     .logo{
-        height: 100px   ;
+        height: 70px;
     }
     .C2{
+        display: flex;
+        flex-direction: column;
         text-align: right;
         height: 100%;
         p{

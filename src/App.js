@@ -10,6 +10,8 @@ import NavbarItems from './components/NavbarItems/NavbarItems';
 import Navbar from './components/Navbar/Navbar';
 import AboutusPage from './pages/AboutusPage/AboutusPage';
 import Footer from './components/Footer/Footer';
+import VideoPlayer from './components/VideoPlayer/VideoPlayer';
+import ContactUs from './components/ContactUs/ContactUs';
 
 
 const Wrapper = ({children}) => {
@@ -34,10 +36,11 @@ function App() {
     <Wrapper>
       <Routes>
         <Route path="" element={<HomePage />} />
+        <Route path="video" element={<VideoPlayer />} />
+        <Route path="contact" element={<ContactUs />} />
         <Route path="projects" element={<AllProjects />} />
         <Route path="Aboutus" element={<AboutusPage />} />
         <Route path="projects/:projectid" element={<ProjectPage />} />
-
       </Routes>
     </Wrapper>
     <Footer />

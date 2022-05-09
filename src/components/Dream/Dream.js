@@ -7,7 +7,7 @@ function Dream() {
   return (
     <div className='Dream_Container'>
         <h2>BUILD WITH CONFIDENCE</h2>
-        <HashLink to='aboutus' className='Primary_Button'>
+        <HashLink to='aboutus' className='Primary_Button btn-0'>
           Find Out More About Us
         </HashLink>
     </div>

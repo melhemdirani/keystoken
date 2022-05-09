@@ -4,6 +4,7 @@ import Aos from 'aos';
 import { HashLink } from 'react-router-hash-link';
 
 import './ProjectCard.style.scss';
+import dream from '../../assets/images/dream.jpg'
 
 
 function ProjectCard({images, title, id}) {
@@ -19,12 +20,14 @@ function ProjectCard({images, title, id}) {
         setShowText(false)
     }
     
-    return images && (
+    let imageArray = images ? images : [dream]
+
+    return  (
     <div 
         className='ProjectCard_Container' 
         style={ 
             {
-                backgroundImage:`url(${images[0]})`
+                backgroundImage:`url(${imageArray[0]})`
 
             }
         } 
@@ -37,7 +40,7 @@ function ProjectCard({images, title, id}) {
             style={ 
                 showText
                 ? {
-                    backgroundImage: `linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)),  url(${images[0]})`,
+                    backgroundImage: `linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9))`,
                     width: "90%",
                     height: "90%",
                     padding: "20px",

@@ -1,0 +1,72 @@
+.ContactUs_Container{
+    display: flex;
+    flex-direction: column;
+    margin: 85px 0;
+    background-image: url(../../assets/images/wave.webp);
+    background-color: rgba(96, 95, 175, 0.338);
+    background-size: cover;
+    height: 80vh;
+    .sectionTitle{
+        margin: 80px 0 50px 0;
+        .title_description{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: .9em;
+            .icon{
+                height: 20px;
+                margin: 0 5px 0 15px;
+            }
+        }
+    }
+    .ContactForm_Container{
+        display: flex;
+        justify-content: center;
+        .Image{
+            margin: 0 20px;
+            width: 400px;
+            border-radius: 5px;
+        }
+        .Firstcolumn{
+            display: flex;
+            flex-direction: column;
+            width: 450px;
+            margin: 0 20px;
+            .Form{
+                display: flex;
+                flex-direction: column;   
+                textarea, input{
+                    margin: 10px 0;
+                    padding: 10px;
+                    border-radius: 20px;
+                    border: 1px solid #E7E7E7;
+                }
+                input::placeholder, textarea::placeholder {
+                    color: #A9A9A9;
+
+                }
+                textarea{
+                    height: 100px;
+                    resize: none;
+                }
+            }
+            button{
+            }
+        }
+    }
+}
+
+// ----------------- Media Query ------------------- //
+
+
+@media only screen and (max-width: 1039px) {
+
+   
+}
+@media only screen and (max-width: 821px) {
+ 
+}
+@media only screen and (max-width: 600px) {
+   
+}
+

@@ -4,11 +4,22 @@ import './Footer.style.scss';
 import Logo from '../../assets/images/DANASHW.png'
 import SocialMediaIcons from '../SocialMediaIcons';
 import { HashLink } from 'react-router-hash-link';
+import { useLocation } from "react-router-dom";
 
 function Footer() {
-    let year = new Date().getFullYear()
+    let year = new Date().getFullYear();
+    const location = useLocation();
+    const path = location.pathname;
   return (
-    <div className='Footer_Container'>
+    <div 
+        className='Footer_Container'
+        style={path === '/video' ? 
+        {
+            display:'none'
+        }
+        : null
+    }
+    >
         <div className='C1'>
             <HashLink to="/#header">
                 <img alt="Keys Token" src={Logo} className='logo' />
@@ -24,14 +35,27 @@ function Footer() {
             </p>
         </div>
         <div className='C2'>
-            <>
-                <p>Whitepaper</p>
-                <p>KEYS Burn Tracker</p>
-                <p>Medium</p>
-                <p>Media Centre</p>
-                <p>Contract</p>
-                <p>TOS</p>
-            </>
+            <HashLink to='/'>
+                Home
+            </HashLink>
+            <HashLink to='/aboutus'>
+                About Us
+            </HashLink>
+            <HashLink  scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'center' })} to='/aboutus#mission'>
+               Mission
+            </HashLink>
+            <HashLink scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'center' })} to='/aboutus#vision'>
+               Vision
+            </HashLink>
+            <HashLink  to='/aboutus#business vertical'>
+                Business Vertical
+            </HashLink>
+            <HashLink to='/projects#header'>
+                Projects
+            </HashLink>
+            <HashLink to='/contact'>
+                Contact Us
+            </HashLink>
             <SocialMediaIcons />
         </div>
     </div>

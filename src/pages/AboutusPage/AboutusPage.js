@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
+import 'aos/dist/aos.css';
+import Aos from 'aos';
 
 import './AboutusPage.styles.scss';
 import construction from '../../assets/images/construction.jpg'
-import Description from '../../components/Description/Description';
 import DropDown from './DropDown';
 import { clients } from '../../assets/data';
 import RoadMap from '../../components/RoadMap/RoadMap'
@@ -11,9 +12,12 @@ import Services from '../../components/Services/Services';
 
 function AboutusPage() {
 
-   
-  return (
-    <div className='AboutusPage_Container'>
+    useEffect(()=>{
+        Aos.init({ duration: 500 })
+    }, [])
+
+    return (
+    <div className='AboutusPage_Container' >
         <div className='header'>
             <div className='link'>
             <HashLink to="/">
@@ -23,7 +27,7 @@ function AboutusPage() {
             </div>
             <h1>About Us</h1>
         </div>
-        <div className='row1'>
+        <div className='row1' id='about'>
             <img alt='' src={construction} className='img' />
             <div className='description reduced'>
                 <h2>We Are Danash Contracting</h2>
@@ -32,10 +36,9 @@ function AboutusPage() {
                 <p>The company gained its success through extensive experience of more than 60 years securing the trust of the public and private sectors. The expertise and knowledge in the business were broadened, and new talents were brought to widen the perspectives and the capabilities of the company. </p>
                 <p>Today DANASH continues its contributions to Lebanon’s ongoing developmental and infrastructural plans, executing major projects as roads, buildings, marine works, water treatment plants, water and sewage networks for towns and cities in various parts of Lebanon.</p>
                 <p>Benefiting from the years of experience in various contracting trades, Danash Contracting and Trading Co. has preempted an excellent status among the best contracting companies in Lebanon.</p>
-                <p className='scope'>Scope of Work: <span>General Contracting, Engineering, Trading, </span></p>
             </div>
         </div>
-        <div className='row1 reverse'>
+        <div className='row1 reverse' id='vision'  data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-once={true} data-aos-delay={400}>
             <img alt='' src={construction} className='img' />
             <div className='description'>
                 <h2>VISION</h2>
@@ -49,12 +52,12 @@ function AboutusPage() {
                 </ul>
             </div>
         </div>
-        <div className='description2'>
+        <div className='description2' id='mission'>
             <h2>Mission</h2>
             <p>Danash works hard every day to expand its skills and expertise to contribute in the development of the nation.</p>
         </div>
         <Services />
-        <div className='clients_container'>
+        <div className='clients_container' id='clients'>
             <h2>Our Clients</h2>
             <p>Danash works with a large number of nationally & internationally renowned organizations from public and private sectors.</p>
             {

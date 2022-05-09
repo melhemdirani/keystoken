@@ -12,7 +12,7 @@ function OurProjects() {
                
   return (
     <div className='OurPorjects_Container'>
-      <AnimatedDescription Span="Projects" title="Key" description="Separated they live in. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country" />
+      <AnimatedDescription Span="Projects" title="Key" description="DANASH has executed a large number of EPC projects. Here is an overview of some key executed projects" />
 
       <div className='projects'>
         {

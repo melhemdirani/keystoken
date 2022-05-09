@@ -36,12 +36,12 @@ function Services() {
         }, 
     ]
   return (
-    <div className='Services_Container'>
+    <div className='Services_Container'  id='classifications'>
         <h2>Classifications</h2>
         <div className='row2'>
             {
                 services && services.map((service, i) =>
-                    <ServiceCard image={service.image} title={service.title} text={service.text} />
+                    <ServiceCard image={service.image} title={service.title} text={service.text} key={i} />
                 )
             }
         </div>

@@ -6,7 +6,7 @@ import './AllProjects.styles.scss';
 
 function AllProjects() {
   return (
-    <div className='AllProjects_Container'>
+    <div className='AllProjects_Container' id='header'>
       <div className='header'>
         <div className='link'>
           <HashLink to="/">

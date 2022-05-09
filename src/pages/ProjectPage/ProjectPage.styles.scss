@@ -1,8 +1,9 @@
 .ProjectPage_Container{
     display: flex;
-
     flex-direction: column;
     align-items: center;
+    margin-bottom: 100px;
+
     h1{
         color: #605FAF;
     }
@@ -15,7 +16,6 @@
 
     }
     .p{
-        margin-top: -35px !important;
     }
     li{
         margin: 10px;
@@ -39,8 +39,9 @@
             }
             .Images{
                 display: flex;
-                width: 600px;
-                overflow: scroll;
+                width: 550px;
+                overflow-x: scroll;
+                overflow-y: hidden;
                 .image{
                     width: 100px;
                     height: 100px;
@@ -57,21 +58,21 @@
                 margin: 0 20px;
             }
             .first_image{
-                width: 600px;
-                height: 500px;
+                width: 550px;
+                height: 450px;
                 object-fit: cover;
                 object-position: 50% 50%;
                 
             }
         }
-    
         .description{
-            max-width: 37vw;
+            max-width: 45vw;
             margin-top: 30px;
-            height: 500px;
-            overflow-y: scroll;
             text-align: left;
             margin-left: 20px;
+            .read{
+                cursor: pointer;
+            }
         }
     }
   

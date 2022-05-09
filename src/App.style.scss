@@ -34,7 +34,7 @@ a{
   background-color: black;
 }
 .Secondary_Button{
-  background-color: rgba($color: #39379B, $alpha: .3);
+  background-color: rgba($color: #47a0a3, $alpha: .8);
   border: none;
   color: white;
   font-size: 18px;
@@ -44,21 +44,20 @@ a{
 }
 .Primary_Button{
   margin-top: 25px;
-  background-color: rgb(96, 95, 175);
+  background-color: rgba($color: #47a0a3, $alpha: .8);
   cursor: pointer;
   border: none;
   color: #DBE4F4;
-  font-size: 1rem;
   padding: 10px 20px;
   border-radius: 5px;
 }
 .Tertiary_Button{
-  background-color: rgba($color: #39379B, $alpha: .8);
+  background-color: rgba($color: #47a0a3, $alpha: .8);
   border: none;
   color: white;
   font-size: 14px;
   padding: 7px 14px;
-  border-radius: 5px;
+  border-radius: 15wpx;
   cursor: pointer;
 }
 .menu{
@@ -87,13 +86,14 @@ a{
   80% {  padding: 20px 85px; margin-left: -5px; margin-top: -5px; font-size: 1.1rem; }
   100% {  padding: 15px 80px;  }  
 }  
-
+.video_container{
+}
 .btn-0 {
   display: inline-block;
   border-radius: 10rem;
   color: #fff;
   text-transform: uppercase;
-  font-size: 1rem; 
+  font-size: .9rem; 
   letter-spacing: .1rem;
   transition: all .6s;
   position: relative;
@@ -117,7 +117,7 @@ a{
     left: 0;
     width: 0%;
     height: 100%;
-    background-color: #39379B;
+    background-color: #47a0a3;
     transition: all .6s;
     border-radius: 10rem;
     z-index: -1;
@@ -131,7 +131,7 @@ a{
 }
 .btn-1 {
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 15px;
   color: #fff;
   font-size: .8rem; 
   transition: all .4s;
@@ -156,7 +156,7 @@ a{
     left: 0;
     width: 0%;
     height: 100%;
-    background-color: #39379B;
+    background-color: #47a0a3;
     transition: all .4s;
     border-radius: 5px;
     z-index: -1;

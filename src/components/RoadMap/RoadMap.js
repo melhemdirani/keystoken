@@ -10,6 +10,10 @@ import Crusher from '../../assets/images/crusher.svg';
 import Asphalt from '../../assets/images/asphalt.svg';
 import Workshop from '../../assets/images/workshop.svg';
 import Accommodation from '../../assets/images/accommodation.svg';
+import Sand from '../../assets/images/sand.svg';
+import Brick from '../../assets/images/brick.svg';
+import Warehouse from '../../assets/images/warehouse.svg';
+import Offices from '../../assets/images/office.svg';
 
 function RoadMap() {
 
@@ -20,28 +24,28 @@ function RoadMap() {
   const texts = [
     {
       title: "Staff",
-      text: "DANASH employs about 1250 staff between management, engineers, general services, foremen, technicians and general labor.",
+      text: "DANASH employs about 400 staff between management, engineers, general services, foremen, technicians and general labor",
       image: Staff
     },
     {
       title: "Machinery",
-      text: "DANASH owns a large number (circa 500 units) of light & heavy machinery fleet related to our business scope.",
+      text: "DANASH owns a large number (circa 400 units) of light & heavy machinery fleet related to its business scope",
       image: Machine
     },
     {
       title:"Concrete Plants",
-      text: "Two concrete production plants of a total capacity of 120m3/hour",
+      text: "3 Ready mix concrete production plants",
       image: Plant
 
     },
     {
       title:"Quarry Crushers", 
-      text: "Two quarry crushers & a concrete bricks factory.",
+      text: "2 quarry crushers",
       image: Crusher
     },
     {
       title:"Asphalt Plant",
-      text: "Asphalt production plant with a capacity of 120 m3fhour",
+      text: "Asphalt production plant",
       image: Asphalt
     },
     {
@@ -51,24 +55,40 @@ function RoadMap() {
     },
     {
       title:"Staff Accomodation Modules",
-      text: "300 staff accommodation modules available for relocation at short notice.",
+      text: "300 staff accommodation modules available for relocation at short notice",
       image: Accommodation
+    },
+    {
+      title:"Sand Plant",
+      text: "Sand making and washing plant",
+      image: Sand
+    },
+    {
+      title:"Brick Plant",
+      text: "Precast concrete bricks plant",
+      image: Brick
+    },
+    {
+      title:"Warehouses",
+      text: "13 warehouses distributed across the country used as logistics bases and storages",
+      image: Warehouse
+    },
+    {
+      title:"Offices",
+      text: "9 offices facilities located in the main cazas across the country",
+      image: Offices
     },
   ]
   return (
-    <div className='RoadMap_Container' id='Roadmap'>
-        <div className='desc'>
-            <h2>KEY FIGURES</h2>
-            <p>Please right a short description</p>
-        </div>
-        <div className='cards'>
-          {
-            texts && texts.map((item, i) => 
-              <RoadMapCard gray={2} title={item.title} text={item.text} image={item.image} key={i}/>
-            )
-          }
-        </div>
-       
+    <div className='RoadMap_Container' id='business vertical'>
+      <h2>Business Vertical</h2>
+      <div className='cards'>
+        {
+          texts && texts.map((item, i) => 
+            <RoadMapCard gray={2} title={item.title} text={item.text} image={item.image} key={i}/>
+          )
+        }
+      </div>
     </div>
   )
 }
