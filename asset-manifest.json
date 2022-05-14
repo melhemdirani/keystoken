@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/keystoken/static/css/main.fde1fce9.css",
-    "main.js": "/keystoken/static/js/main.5ad06ef7.js",
+    "main.css": "/keystoken/static/css/main.2885ce29.css",
+    "main.js": "/keystoken/static/js/main.6a4f5b4a.js",
     "static/media/asphaltPlant.mp4": "/keystoken/static/media/asphaltPlant.75868923a61eb8a29b4f.mp4",
     "static/media/11.png": "/keystoken/static/media/11.3084a587b4448f95fa70.png",
     "static/media/home.png": "/keystoken/static/media/home.d34e051c082232fc9ac4.png",
@@ -45,7 +45,6 @@
     "static/media/6.jpg": "/keystoken/static/media/6.c774081ff852078a09da.jpg",
     "static/media/gover16.png": "/keystoken/static/media/gover16.35e40e440169f5b723b7.png",
     "static/media/BAHNSCHRIFT1.TTF": "/keystoken/static/media/BAHNSCHRIFT1.b00e12e37c52124aa504.TTF",
-    "static/media/verticals.jpg": "/keystoken/static/media/verticals.26b431ec4c976df0b1a9.jpg",
     "static/media/16.jpg": "/keystoken/static/media/16.7510de722abae511f379.jpg",
     "static/media/dream.jpg": "/keystoken/static/media/dream.a5e53623a6eaf5b99a49.jpg",
     "static/media/gover4.png": "/keystoken/static/media/gover4.69ef41b5d28c01c7a16b.png",
@@ -136,11 +135,11 @@
     "index.html": "/keystoken/index.html",
     "static/media/right.svg": "/keystoken/static/media/right.07c8d32b63b93bb3898904970bb82187.svg",
     "static/media/left.svg": "/keystoken/static/media/left.a721effc70899b4ce64656d844ecf128.svg",
-    "main.fde1fce9.css.map": "/keystoken/static/css/main.fde1fce9.css.map",
-    "main.5ad06ef7.js.map": "/keystoken/static/js/main.5ad06ef7.js.map"
+    "main.2885ce29.css.map": "/keystoken/static/css/main.2885ce29.css.map",
+    "main.6a4f5b4a.js.map": "/keystoken/static/js/main.6a4f5b4a.js.map"
   },
   "entrypoints": [
-    "static/css/main.fde1fce9.css",
-    "static/js/main.5ad06ef7.js"
+    "static/css/main.2885ce29.css",
+    "static/js/main.6a4f5b4a.js"
   ]
 }
