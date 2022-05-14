@@ -28,9 +28,10 @@ const ContactUs = () =>{
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
+        alert(`Thank you ${name}, your message was sent!`)
         setName('');
         setEmail('');
+        setLastName('');
         setMessage('');
     }
     return(
@@ -39,11 +40,15 @@ const ContactUs = () =>{
                 <h1>Have Some Questions For Us?</h1>
                 <div className='title_description'>
                     <img alt="" src={Location} className='icon' />
-                    Tyre, South Lebanon
+                    Sit Nafisa street - Al Tanmia building - 4th Floor Saida - Lebanon
+
+
                     <img alt="" src={Phone} className='icon' />
-                    <a>
-                        +961 111 111
+                    <a href='tel:9617724405'>
+                    Tel: +961 7 724 405
                     </a>
+                    <span>{" "}Fax: +961 7 733 455</span>
+
                 </div>
             </div>
             <div className='ContactForm_Container'>

@@ -48,7 +48,7 @@ function Footer() {
                Vision
             </HashLink>
             <HashLink  to='/aboutus#business vertical'>
-                Business Vertical
+                Business Verticals
             </HashLink>
             <HashLink to='/projects#header'>
                 Projects

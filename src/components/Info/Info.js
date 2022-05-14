@@ -20,10 +20,10 @@ function Info() {
   );
 
   const infoData = [
-    {title: "Staff", ammount: "400 employees"},
-    {title: "Machinary", ammount: "Circa 500 units of light & heavy machinery fleet"},
-    {title: "Plants", ammount: "3 Ready mix concrete plants, 2 Quarry crushers, Sand making and washing, Asphalt batching, Precast concrete brick"},
-    {title: "Facilities", ammount: "Mechanical & Electrical workshop, Metal workshop, 13 warehouses, 9 office facilities"}
+    {title: "STAFF", ammount: "400 employees"},
+    {title: "MACHINERY", ammount: "Circa 500 units of light & heavy machinery fleet"},
+    {title: "PLANTS", ammount: "3 Ready mix concrete plants, 2 Quarry crushers, Sand making and washing, Asphalt batching, Precast factory"},
+    {title: "FACILITIES", ammount: "Mechanical & Electrical workshop, Metal workshop, 13 warehouses, 9 office facilities"}
   ]
 
   return (

@@ -369,7 +369,7 @@ export const clients= [
           "MUNICIPALITIES" 
       ],
       images: [
-        gover1,
+        gover1  ,
         gover2,
         gover3,
         gover4,
@@ -619,7 +619,7 @@ export const projects = [
 export  const AllProjects = [
  {
   "Infrastructure": 1,
-  "Column2": "Supervision on execution of boulevard Nabatieh project, Sabbah round about, Kfarouman round about",
+  "Column2": "Supervision on execution of boulevard Nabatieh project, Sabbah roundabout, Kfarouman roundabout",
   "Column3": "1996",
   "Column4": "17/11/1997",
   "Column5": "Hamdani Engineering and Contracting Establishment",

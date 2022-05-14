@@ -12,14 +12,15 @@
     }
     h2{
         margin: 0;
-        color: #605FAF;
+        color: #294B81;
     }
     align-items: center;
     .header{
-        background-image: linear-gradient(rgba($color: #39379B, $alpha: .3), rgba($color: #39379B, $alpha: .5)),  url('../../assets/images/dream.jpg');
+        background-image: linear-gradient(rgba($color: #2969A7, $alpha: .3), rgba($color: #2969A7, $alpha: .5)),  url('../../assets/images/OTV.jpg');
         height: 80VH;
         background-attachment: fixed;
         background-size: cover;
+        background-position: 50% 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -76,7 +77,7 @@
         }
         .scope{
             font-weight: 600;
-            color: #605FAF;
+            color: #294B81;
             margin: 0;
             span{
                 font-weight: normal;
@@ -89,9 +90,10 @@
     }
     .description2{
         color: white;
-        background-image: linear-gradient(rgba($color: #39379B, $alpha: .3), rgba($color: #39379B, $alpha: .5)),  url('../../assets/images/dream.jpg');
+        background-image: linear-gradient(rgba($color: #2969A7, $alpha: .3), rgba($color: #2969A7, $alpha: .5)),  url('../../assets/images/OTV.jpg');
         padding: 100px 0;
         width: 100%;
+        background-position: 50% 100%;
         background-size: cover;
         background-attachment: fixed;
         font-size: 1.4rem;
@@ -145,7 +147,7 @@
     .DropDown_Contianer{
         h3{
             color: white;
-            background-color: rgba($color: #39379B, $alpha: .9);
+            background-color: rgba($color: #2969A7, $alpha: .9);
             padding: 15px 20px;
             border-radius: 5px;
             font-size: 1em;
@@ -157,14 +159,14 @@
         }
         .clients{
             display: grid;
-            grid-template-columns: repeat(5, auto);
+            grid-template-columns: repeat(4, auto);
             flex-wrap: wrap;
             justify-content: space-between;
             .images{
-                height: 80px;
+                height: 130px;
                 width: 200px;
                 object-fit: contain;
-                margin: 20px 10px;
+                margin: 20px 5px;
             }
             p{
                 color: white;

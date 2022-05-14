@@ -4,7 +4,8 @@ import 'aos/dist/aos.css';
 import Aos from 'aos';
 
 import './AboutusPage.styles.scss';
-import construction from '../../assets/images/construction.jpg'
+import construction from '../../assets/images/cover2.png'
+import Vision from '../../assets/images/Vision.jpg'
 import DropDown from './DropDown';
 import { clients } from '../../assets/data';
 import RoadMap from '../../components/RoadMap/RoadMap'
@@ -39,7 +40,7 @@ function AboutusPage() {
             </div>
         </div>
         <div className='row1 reverse' id='vision'  data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-once={true} data-aos-delay={400}>
-            <img alt='' src={construction} className='img' />
+            <img alt='' src={Vision} className='img' />
             <div className='description'>
                 <h2>VISION</h2>
                 <p>Through the years, DANASH distinguished itself between competitors by diversifying its activities in the contracting field. Beside its expertise in infrastructure (roads, buildings, bridges…), DANASH excelled in other types of projects like marine, real estate, industrial and even facilities management domain. </p>
@@ -67,7 +68,6 @@ function AboutusPage() {
             }
         </div>
         <div className='curve' />
-        <RoadMap />
     </div>
   )
 }

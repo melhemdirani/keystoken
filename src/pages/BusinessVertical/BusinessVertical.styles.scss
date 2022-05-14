@@ -1,0 +1,30 @@
+.BusinessVertical_Container{
+    .header{
+        background-image: linear-gradient(rgba($color: #2969A7, $alpha: .3), rgba($color: #2969A7, $alpha: .5)),  url('../../assets/images/dream.jpg');
+        height: 80VH;
+        background-attachment: fixed;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        color: white;
+        width: 100%;
+        .link, h1{
+            margin-left: 50px;
+        }
+        h1{
+            margin-bottom: 80px;
+        }
+        .link{
+            display: flex;
+            p{
+                margin: 0
+            }
+            a{
+                margin-right: 5px;
+                color: white;
+            }
+        }
+    }
+}

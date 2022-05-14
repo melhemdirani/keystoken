@@ -4,7 +4,7 @@
     align-items: center;
     margin: 120px 0;
     h2{
-      color: rgba($color: #605FAF, $alpha: 1);  
+      color: rgba($color: #294B81, $alpha: 1);  
     }
     .EPC{
         height: 600px;
@@ -18,12 +18,13 @@
             height: 400px;
             margin: 0 30px;
             object-fit: cover;
+
         }
         .background{
             height: 300px;
             width: 500px;
             margin-top: -280px;
-            background-color: rgba($color: #47a0a3, $alpha: .3);
+            background-color: rgba($color: #009DB2, $alpha: .3);
             position: absolute;
             z-index: -10;
         }
@@ -32,7 +33,7 @@
     .description{
         max-width: 500px;
         margin: 0 30px;
-        text-align: left;
+        text-align: justify;
         display: flex;
         flex-direction: column;
         justify-content: space-around;

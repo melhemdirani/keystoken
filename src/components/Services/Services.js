@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Cdr from '../../assets/images/cdr.png';
+import Cdr from '../../assets/images/gover3.png';
 import Water from '../../assets/images/water.png';
-import Transport from '../../assets/images/transport.png';
+import Transport from '../../assets/images/gover7.png';
 import AnimatedDescription from '../AnimatedDescription/AnimatedDescription';
 import './Services.styles.scss';
 

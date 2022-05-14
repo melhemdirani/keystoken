@@ -80,13 +80,14 @@ function ProjectPage() {
         </div>
       }
       <div className='description'>
-        <p className='type'>{type} <span className='date'>{date} {">"} {date2}</span></p>
         <h1>{title}</h1>
+        <p className='type'><span>Type: </span>{type} </p>
+        <p><span>Date: </span><span className='date'>{date} {">"} {date2}</span></p>
+        <p><span> Client:</span> {client}</p>
+        <p><span> Role:</span> {role}</p>
         {text && <p>{text5}</p>}
         {text2 && <p className='p'>{text7}</p> }
         {text3 && <p className='p'>{text9}</p>}
-        <p><span> Client:</span> {client}</p>
-        <p><span> Role:</span> {role}</p>
       </div>
     </div>
   </div>

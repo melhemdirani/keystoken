@@ -9,7 +9,6 @@ function NavbarItems({scrolled, project, width}) {
     let location = useLocation()
     let path = location.pathname
     let b = scrolled || project  ? 'NavbarItems_Scrolled NavbarItems' : 'NavbarItems'
-    console.log("path", scrolled)
     return(
         <div  className={b}  >
             { width < 600  &&
@@ -29,7 +28,7 @@ function NavbarItems({scrolled, project, width}) {
                     project 
                     ? {color: "rgba(0,0,0,.6)"} 
                     : path === '/' && scrolled 
-                    ? {color:"#605FAF"} 
+                    ? {color:"#294B81"} 
                     : scrolled 
                     ? {color: "rgba(0,0,0,.6)"} 
                     : {color: "white"}
@@ -44,7 +43,7 @@ function NavbarItems({scrolled, project, width}) {
                     project 
                     ? {color: "rgba(0,0,0,.6)"} 
                     : path === '/aboutus' && scrolled 
-                    ? {color:"#605FAF"} 
+                    ? {color:"#294B81"} 
                     : scrolled 
                     ? {color: "rgba(0,0,0,.6)"} 
                     : {color: "white"}
@@ -53,16 +52,18 @@ function NavbarItems({scrolled, project, width}) {
                 About Us
             </HashLink>
             <HashLink 
-                to="/aboutus/#business vertical" 
+                to="/BusinessVerticals" 
                 style={
                     project 
                     ? {color: "rgba(0,0,0,.6)"} 
+                    : path === '/BusinessVerticals' && scrolled 
+                    ? {color:"#294B81"} 
                     : scrolled 
                     ? {color: "rgba(0,0,0,.6)"} 
                     : {color: "white"}
                 }
             >
-                Business Vertical
+                Business Verticals
             </HashLink>
             <HashLink 
                 to="/projects" 
@@ -70,7 +71,7 @@ function NavbarItems({scrolled, project, width}) {
                     project 
                     ? {color: "rgba(0,0,0,.6)"} 
                     : path === '/projects' && scrolled 
-                    ? {color:"#605FAF"} 
+                    ? {color:"#294B81"} 
                     : scrolled 
                     ? {color: "rgba(0,0,0,.6)"} 
                     : {color: "white"}
@@ -84,7 +85,7 @@ function NavbarItems({scrolled, project, width}) {
                     project 
                     ? {color: "rgba(0,0,0,.6)"} 
                     : path === '/contact' && scrolled 
-                    ? {color:"#324172"} 
+                    ? {color:"#294B81"} 
                     : scrolled 
                     ? {color: "rgba(0,0,0,.6)"} 
                     : {color: "white"}

@@ -1,7 +1,6 @@
 import React from 'react';
 
 import './AboutUs.styles.scss';
-import construction from '../../assets/images/construction.jpg'
 import EPC from '../../assets/images/epc.png'
 import { HashLink } from 'react-router-hash-link';
 
@@ -9,8 +8,8 @@ function AboutUs() {
   return (
     <div className='AboutUs_Container'>
       <div className='row1'>
-        <img alt='' src={construction} className='img' />
-        <div className='background' />
+        <img alt='' src={EPC} className='img' />
+        <div className='background' style={{display: "none"}}/>
       </div>
       <div className='description'>
         <h2>We Are Danash Contracting and Trading company</h2>

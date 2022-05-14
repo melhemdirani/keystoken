@@ -50,7 +50,7 @@ function RoadMap() {
     },
     {
       title:"Workshops",
-      text: "Mechanical and electrical workshop",
+      text: "Mechanical and electrical workshop, welding & coating center, and a machinery refurbishment yard",
       image: Workshop
     },
     {
@@ -80,8 +80,7 @@ function RoadMap() {
     },
   ]
   return (
-    <div className='RoadMap_Container' id='business vertical'>
-      <h2>Business Vertical</h2>
+    <div className='RoadMap_Container' id='business verticals'>
       <div className='cards'>
         {
           texts && texts.map((item, i) => 
