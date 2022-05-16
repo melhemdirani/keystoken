@@ -60,7 +60,6 @@ function ProjectPage() {
 
   return (
     <div className='ProjectPage_Container' >
-    <div className='row1'>
       { imageArray && 
         <div className='Images_container'>
           <img alt="" src={imageArray[index]} className="first_image"/>
@@ -89,8 +88,7 @@ function ProjectPage() {
         {text2 && <p className='p'>{text7}</p> }
         {text3 && <p className='p'>{text9}</p>}
       </div>
-    </div>
-  </div>
+   </div>
   )
 }
 
