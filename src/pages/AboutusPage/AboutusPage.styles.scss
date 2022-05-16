@@ -13,6 +13,7 @@
     h2{
         margin: 0;
         color: #294B81;
+        text-align: left;
     }
     align-items: center;
     .header{
@@ -49,9 +50,9 @@
         justify-content: center;
         align-items: center;
         margin: 80px 0;
-        max-width: 90%;
         .img{
-            width: 600px;
+            width: 40vw;
+            max-width: 600px;
             height: 500px;
             margin: 0 20px;
             object-fit: cover;
@@ -69,6 +70,7 @@
         justify-content: space-around;
         padding: 0 20px;
         text-align: justify;
+        max-width: 600px;
         p{
             line-height: 1.8rem;
         }
@@ -156,12 +158,14 @@
             align-items: center;
             cursor: pointer;
             justify-content: space-between;
+            span{
+                margin-left: 10px;
+            }
         }
         .clients{
-            display: grid;
-            grid-template-columns: repeat(4, auto);
+            display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: flex-start;
             .images{
                 height: 130px;
                 width: 200px;
@@ -186,5 +190,55 @@
         span{
             font-size: 1.4em;
         }
+    }
+}
+
+// ----------------- Media Query ------------------- //
+
+@media only screen and (max-width: 1110px) {
+    .AboutusPage_Container{
+        .row1{
+            flex-direction: column-reverse;
+            width: 90vw;
+            .description{
+                max-width: 100%;
+                padding: 0;
+            }
+            .img{
+                width: 90vw ;
+                max-width: 100vw;
+                margin: 40px 0;
+            }
+        }
+       
+    }
+}
+@media only screen and (max-width: 900px) {
+    .AboutusPage_Container{
+        .DropDown_Contianer{
+            h3{
+                padding: 5px 15px;
+            }
+            .clients{
+                .images{
+                    height: 100px;
+                    width: 150px;
+                }
+            }
+        }
+       
+    }
+}
+@media only screen and (max-width: 430px) {
+    .AboutusPage_Container{
+        .DropDown_Contianer{
+            .clients{
+                justify-content: center;
+            }
+        }
+        .clients_container{
+            width: 90%;
+        }
+       
     }
 }

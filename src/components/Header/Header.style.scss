@@ -13,6 +13,7 @@
     }
     .text2{
         line-height: 1.4em;
+        font-size: 1.2rem;
     }
     .corousel_image{
         width: 100vw;
@@ -36,8 +37,11 @@
                 font-size: .8em;
                 font-weight: 500;
             }
-            p, h2{
+            p, h1{
                 margin: 10px 0;
+            }
+            h1{
+                font-size: 1.8rem;
             }
         }
     }
@@ -45,7 +49,7 @@
         position: absolute;
         display: flex;
         top: 0;
-            left: 0;
+        left: 0;
     }
     .logo{
         justify-self: center;
@@ -135,8 +139,10 @@
         .play_img{
             margin: 0 50px;
         }
-        .Description{
-            padding: 0 30px;
+        .corousel_image{
+            .Description{
+                padding: 0 30px;
+            }
         }
      
     }
@@ -154,12 +160,23 @@
 }
 @media only screen and (max-width: 601px) {
     .Header_Container{
+        .text2{
+            line-height: 1.4em;
+            font-size: 1rem;
+        }
         .play_img{
             margin: 0 30px;
         }
-        .Description{
-            padding: 0;
-            padding-right: 20px;
+        .corousel_image{
+
+            .Description{
+                padding: 0;
+                max-width: 600px;
+                padding-right: 20px;
+                h1{
+                    font-size: 1.3rem !important;
+                }
+            }
         }
     }
     
@@ -169,7 +186,15 @@
         .play_img{
             margin: 0 20px;
         }
-      
+        .corousel_image{
+            flex-direction: column-reverse;
+            .play_container{
+                margin-top: 50px;
+            }
+            .Description{
+                max-width: 80%;
+            }
+        }
     }
     
 }

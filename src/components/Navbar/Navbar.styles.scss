@@ -41,9 +41,9 @@
         user-select: none;
     }
     .MenuIcon{
-        transform: scale(1.5);
-        margin-left: auto;
-        margin-right: 20px;
+        height: 30px;
+        justify-self: flex-end;
+        margin-left: calc(100vw - 40px);
     }
 }
 .Navbar_ScrollSpy{
@@ -98,14 +98,16 @@
         align-items: center;
         position: absolute;
         justify-content: space-between;
-        max-height: 250px;
+        max-height: 70vh;
         right: 18px;
         margin: 0;
         top: 40px;
+        border: 1px solid rgba(0,0,0,0.1);
+        margin-top: 20px;
         background-color: white;
         color: black;
         a{
-            width: 200px;
+            width: 80vw;
             height: 250px;
             display: flex;
             justify-content: center;

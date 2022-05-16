@@ -1,5 +1,4 @@
 .ProjectCard_Container{
-    padding: 20px;
     overflow: hidden;
     div{
         display: flex;
@@ -17,15 +16,16 @@
     color: white;
     margin: 20px;
     height: 300px;
+    text-align: center;
     cursor: pointer;
-    width: 420px;
+    width: 90%;
     p{
         font-weight: 300;
         letter-spacing: .2em;
         max-width: 80%;
         color: black;
     }
-    h3{
+    h4{
         line-height: 1.4em;
         color: #294B81;
     }
@@ -38,15 +38,23 @@
 
 // ----------------- Media Query ------------------- //
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 821px) {
     .ProjectCard_Container{
-        margin: 10px;
     }
     
 }
 @media only screen and (max-width: 600px) {
     .ProjectCard_Container{
+        height: 80vw;
         
+    }
+    
+}
+@media only screen and (max-width: 400px) {
+    .ProjectCard_Container{
+        h4{
+            font-size: .8em;
+        }
     }
     
 }

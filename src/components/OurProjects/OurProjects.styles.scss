@@ -4,9 +4,30 @@
     align-items: center;
     margin-bottom: 100px;
     .projects{
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 400px);
         justify-content: center;
+        align-items: center;
+        width: 100%;
+        justify-items: center;
     }
     
+}
+// ----------------- Media Query ------------------- //
+
+@media only screen and (max-width: 821px) {
+    .OurPorjects_Container{
+
+        .projects{
+            grid-template-columns: repeat(auto-fill, 50vw);
+        }
+      
+    }
+}
+@media only screen and (max-width: 600px) {
+    .OurPorjects_Container{
+        .projects{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
 }

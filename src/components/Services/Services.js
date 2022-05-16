@@ -11,7 +11,7 @@ const ServiceCard = ({title, image, text}) => {
     return(
         <div className='ServiceCard_Container'>
             <img alt="" src={image} />
-            <h3>{title}</h3>
+            <h4>{title}</h4>
             <p>{text}</p>
         </div>
     )

@@ -4,6 +4,7 @@ import Message from '../../assets/images/dream.jpg';
 import './ContactUs.styles.scss';
 import Location from '../../assets/images/location.png'
 import Phone from '../../assets/images/phone.png'
+import Fax from '../../assets/images/fax.png'
 
 const ContactUs = () =>{
 
@@ -12,19 +13,6 @@ const ContactUs = () =>{
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
 
-    const [styling, setStyling] = useState("")
-    const [styling2, setStyling2] = useState("")
-    const [styling3, setStyling3] = useState("")
-
-    const handleChange = () => {
-    }
-    const handleChange2 = () => {
-    }
-    const handleChange3 = () => {
-    }
-    const resetBorder = () =>{
-      
-    }
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -39,15 +27,17 @@ const ContactUs = () =>{
             <div className='sectionTitle' >
                 <h1>Have Some Questions For Us?</h1>
                 <div className='title_description'>
-                    <img alt="" src={Location} className='icon' />
-                    Sit Nafisa street - Al Tanmia building - 4th Floor Saida - Lebanon
-
-
-                    <img alt="" src={Phone} className='icon' />
-                    <a href='tel:9617724405'>
-                    Tel: +961 7 724 405
+                    <p className='flex'>
+                        <img alt="" src={Location} className='icon' />
+                        Sit Nafisa street - Al Tanmia building - 4th Floor Saida - Lebanon
+                    </p>
+                    <a href='tel:9617724405' className='flex'>
+                    <img alt="" src={Phone} className='icon' /> Tel: +961 7 724 405
                     </a>
-                    <span>{" "}Fax: +961 7 733 455</span>
+                    <p className='flex'>
+                        <img alt="" src={Location} className='icon' />
+                        Fax: +961 7 733 455
+                    </p>
 
                 </div>
             </div>

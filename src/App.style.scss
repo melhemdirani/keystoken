@@ -10,6 +10,18 @@ a{
 h1,h2,h3{
   text-transform: uppercase;
 }
+h1{
+  font-size: 3.2rem;
+}
+h2{
+  font-size: 2rem;
+}
+h3{
+  font-size: 1.5rem;
+}
+h4{
+  font-size: 1.2rem;
+}
 .spinner {
   width: 40px;
   height: 40px;
@@ -185,6 +197,11 @@ h1,h2,h3{
       100% {  padding: 12px 50px;  }  
   }  
 }
+@media only screen and (max-width: 700px) {
+  h1{
+    font-size: 2rem;
+  } 
+}
 @media only screen and (max-width: 600px) {
   .icons2{
     margin: 0 5px;
@@ -195,4 +212,15 @@ h1,h2,h3{
         padding: 0 3px;
     }
   }
+  .btn-0 {
+    font-size: .7em;
+  }
+  .Primary_Button{
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  h1{
+    font-size: 1.7rem;
+  } 
 }

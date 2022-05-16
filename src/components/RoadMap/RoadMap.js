@@ -81,13 +81,11 @@ function RoadMap() {
   ]
   return (
     <div className='RoadMap_Container' id='business verticals'>
-      <div className='cards'>
         {
           texts && texts.map((item, i) => 
             <RoadMapCard gray={2} title={item.title} text={item.text} image={item.image} key={i}/>
           )
         }
-      </div>
     </div>
   )
 }

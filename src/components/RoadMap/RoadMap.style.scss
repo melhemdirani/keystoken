@@ -1,34 +1,29 @@
 .RoadMap_Container{
-    background-color: white;
-    width: 100%;
-    color: BLACK;
-    padding-bottom: 100px;
+    margin: 50px 0 100px 0;
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 280px);
+    justify-content: center;
     p{
         width: 470px;
 
     }
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     .desc{
         margin-left: 80px;
         margin-bottom: -80px;
     }
-    .cards{
-        display: grid;
-        grid-template-columns: repeat(4, 20vw);
-        justify-items: center;
-        margin-top: 50px;
-    }
 }
 // ----------------- Media Query ------------------- //
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     .RoadMap_Container{
- 
-        p{
-            width: 60vw;
-        }
+        flex-direction: column;
+    }
+    
+}
+@media only screen and (max-width: 500px) {
+    .RoadMap_Container{
+        padding: 0;
     }
     
 }

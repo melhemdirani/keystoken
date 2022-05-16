@@ -30,12 +30,12 @@ export default function Header() {
               key={i} 
               className="corousel_image"
             >
-              <HashLink to='video'>
+              <HashLink to='video' className='play_container'>
                 <img alt="play" src={play} className="play_img" />
               </HashLink>
               <div className='Description'>
                 <p className='text1'>WELCOME TO </p>
-                <h2>Danash Contracting and Trading company </h2>
+                <h1>Danash Contracting and Trading company </h1>
                 <p className='text2'>Danash Contracting & Trading Co. is a Civil, Mechanical, Electrical & Instrumentation (CMEI) EPC contractor. </p>
               </div>
               

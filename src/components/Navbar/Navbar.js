@@ -6,7 +6,8 @@ import useWindowDimensions from '../useWindowDimensions';
 import Logo from '../../assets/images/DANASH.png'
 import LogoW from '../../assets/images/DANASHW.png'
 import './Navbar.styles.scss';
-import MenuIcon from '../../assets/images/menu.png'
+import MenuIcon from '../../assets/images/menu.svg'
+import MenuIcon2 from '../../assets/images/close.svg'
 import NavbarItems from './NavbarItems';
 
 
@@ -75,13 +76,13 @@ function Navbar() {
                 width > 600   
                 ? <NavbarItems width={width} scrolled={scrolled} project={project}/>
                 :<div>
-                    <img alt="" src={MenuIcon} className='MenuIcon' onClick={handleMenuClick}/>
+                    <img alt="" src={showMenu ? MenuIcon2 : MenuIcon} className='MenuIcon' onClick={handleMenuClick}/>
                     {
                         showMenu && 
                         <NavbarItems 
                          onClick={closeMenu} 
                          width={width} 
-                         scrolled={scrolled} 
+                         scrolled={true} 
                          project={project}
                          path={location}
                         />

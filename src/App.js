@@ -5,12 +5,11 @@ import HomePage from './pages/HomePage/HomePage';
 import './App.style.scss';
 import ProjectPage from './pages/ProjectPage/ProjectPage';
 import AllProjects from './pages/AllProjects/AllProjects';
-import Menu from './assets/images/menu.png'
 import Navbar from './components/Navbar/Navbar';
 import AboutusPage from './pages/AboutusPage/AboutusPage';
 import Footer from './components/Footer/Footer';
 import VideoPlayer from './components/VideoPlayer/VideoPlayer';
-import ContactUs from './components/ContactUs/ContactUs';
+import ContactUs from './pages/ContactUs/ContactUs';
 import BusinessVertical from './pages/BusinessVertical/BusinessVertical';
 
 
