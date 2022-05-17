@@ -2,6 +2,8 @@
     display: flex;
     justify-content: center;
     margin-top: 140px;
+    margin-bottom: 50px;
+
     align-items: flex-start;
     h1{
         color: #294B81;
@@ -100,13 +102,14 @@
             max-width: 90vw;
             margin-left: 0;
             width: 90vw;
-            margin: 50px 0;
+            margin-top: 50px;
         }
         
     }
 }
 @media only screen and (max-width: 600px) {
     .ProjectPage_Container{
+        margin-top: 20px;
         .Images_container{
            button{
                margin: 0 5px;
