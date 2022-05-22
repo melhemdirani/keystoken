@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/keystoken/static/css/main.7246bf7c.css",
-    "main.js": "/keystoken/static/js/main.55df9ba7.js",
+    "main.css": "/keystoken/static/css/main.f804f2ad.css",
+    "main.js": "/keystoken/static/js/main.365968b5.js",
     "static/media/asphaltPlant.mp4": "/keystoken/static/media/asphaltPlant.75868923a61eb8a29b4f.mp4",
     "static/media/5.png": "/keystoken/static/media/5.035a67a11800e324f772.png",
     "static/media/2.JPG": "/keystoken/static/media/2.4d76aebb6e4a1d7d710d.JPG",
@@ -141,11 +141,11 @@
     "static/media/right.svg": "/keystoken/static/media/right.07c8d32b63b93bb3898904970bb82187.svg",
     "static/media/left.svg": "/keystoken/static/media/left.a721effc70899b4ce64656d844ecf128.svg",
     "static/media/menu.svg": "/keystoken/static/media/menu.e8690d40fb9878b3e1e4f542080ddd15.svg",
-    "main.7246bf7c.css.map": "/keystoken/static/css/main.7246bf7c.css.map",
-    "main.55df9ba7.js.map": "/keystoken/static/js/main.55df9ba7.js.map"
+    "main.f804f2ad.css.map": "/keystoken/static/css/main.f804f2ad.css.map",
+    "main.365968b5.js.map": "/keystoken/static/js/main.365968b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.7246bf7c.css",
-    "static/js/main.55df9ba7.js"
+    "static/css/main.f804f2ad.css",
+    "static/js/main.365968b5.js"
   ]
 }
