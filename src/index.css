@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Bahnschrift';
-  src: local('Bahnschrift'), url(./assets/Bahnschrift/BAHNSCHRIFT1.TTF) format('truetype');
+  src: local('Bahnschrift Light SemiCondensed'), url(./assets/Bahnschrift/BAHNSCHRIFT1.TTF) format('truetype') ;
 }
 body {
   margin: 0;

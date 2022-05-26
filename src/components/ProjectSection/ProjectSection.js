@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import ProjectCard from '../ProjectCard/ProjectCard';
 import './ProjectSection.style.scss'
 import AnimatedDescription from '../AnimatedDescription/AnimatedDescription';
-import { AllProjects } from '../../assets/data';
+import { SortedProjects } from '../../assets/SortedProjects';
 
 function ProjectSection() {
 
@@ -21,7 +21,6 @@ function ProjectSection() {
     setStopSpinning(false)
   }
 
-  let projects = AllProjects
 
   return (
     <div className='ProjectSection_Container' id='team'>
@@ -42,7 +41,7 @@ function ProjectSection() {
         stopSpinning ? 
         <div className='Projects_Container'>
           {
-            projects && projects.map((project, i) =>{ 
+            SortedProjects && SortedProjects.map((project, i) =>{ 
               let images = project.images ? project.images : null
               let type = Object.keys(project)[0]
               let title = project.Column2
@@ -52,6 +51,8 @@ function ProjectSection() {
                   key={i}
                   title={title}
                   id={i}
+                  type={type}
+                  date={project.Column4}
                 />
               )
               : null

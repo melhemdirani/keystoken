@@ -9,23 +9,42 @@ const DropDown = ({ type, clients, images}) => {
     }
     useEffect(()=>{
         Aos.init({ duration: 400 })
-    }, [])
+    }, [show])
     return  (
         <div className='DropDown_Contianer'>
-            <h3 onClick={handleClick}>{type} {show ? <span className='slowRotate2'>{">"}</span> : <span className='slowRotate1'> {">"} </span>}</h3>
-            <div className='clients'  >
-                {
-                    show && clients && clients.map((client, i) => 
-                    <p key={i}>{client}</p>
-                    )
+            <h3 
+             onClick={handleClick}
+            >
+                {type} {
+                    show 
+                    ? <span className='slowRotate2'>{">"}</span> 
+                    : <span className='slowRotate1'> {">"} </span>
                 }
-                {
-                    show && images && images.map((image, i) => 
-                    <img alt="" src={image} key={i} className='images' data-aos="fade-right" data-aos-easing="ease-in-sine"    data-aos-once={true} />
-                    )
-                }
-            </div>
-           
+            </h3>
+            { show &&
+                <div 
+                    className='clients'   
+                    data-aos="fade-right" 
+                    data-aos-easing="ease-in-sine"     
+                >
+                    {
+                        images && images.map((image, i) => 
+                        <div>
+                            <img 
+                             alt="" 
+                             src={image} 
+                             key={i} 
+                             className='images' 
+                             data-aos-once={true} 
+                            />
+                            <p>{clients && clients[i]}</p>
+
+                        </div>
+                       
+                        )
+                    }
+                </div>
+            }
         </div>
     );
 }

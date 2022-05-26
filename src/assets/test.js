@@ -1,57 +1,69 @@
-import React, { useEffect, useState } from 'react';
-import 'aos/dist/aos.css';
-import Aos from 'aos';
-import { HashLink } from 'react-router-hash-link';
+import React, { useState, useEffect } from 'react';
 
-import './ProjectCard.style.scss';
+import ProjectCard from '../ProjectCard/ProjectCard';
+import './ProjectSection.style.scss'
+import AnimatedDescription from '../AnimatedDescription/AnimatedDescription';
+import { SortedProjects } from '../../assets/SortedProjects';
+
+function ProjectSection() {
+
+  const [projectFilter, setProjectFilter] = useState("All")
+  const [stopSpinning, setStopSpinning] = useState(false)
+
+  useEffect(() => {  
+    const interval = setInterval(() => { 
+      setStopSpinning(true)} , 1000); return () => clearInterval(interval);
+    }, [projectFilter]
+  );
+
+  const handleChange = (e) => {
+    setProjectFilter(e.target.value)
+    setStopSpinning(false)
+  }
 
 
-function ProjectCard({images, title}) {
-    useEffect(()=>{
-        Aos.init({ duration: 500 })
-      }, [])
-    
-    const [ showText, setShowText] = useState(false)
-    const Show = () => {
-        setShowText(true)
-    }
-    const Hide = () => {
-        setShowText(false)
-    }
-    return images && (
-    <div 
-        className='ProjectCard_Container' 
-        style={ 
-            {
-                backgroundImage:`url(${images[0]})`
+  return (
+    <div className='ProjectSection_Container' id='team'>
+      <div className='row1'>
+        <AnimatedDescription title="Our Projects" description="Since its foundation, DANASH has executed a large number of EPC projects. Here is an overview of the company’s executed projects."/>
+        <select value={projectFilter} onChange={handleChange}  >
+          <option value="All">All Projects</option>
+          <option value="Roads">Roads Projects</option>
+          <option value="Buildings">Buildings Projects</option>
+          <option value="Infrastructure">Infrastructure</option>
+          <option value="Marine">Marine</option>
+          <option value="Lakes">Lakes</option>
+          <option value="Operation and Maintenance">Operation and Maintenance</option>
+        </select>
+      </div>
 
-            }
-        } 
-        onMouseEnter={Show}
-        onMouseLeave={Hide}
-    >
-        {
-            showText && 
-            <div
-            style={ 
-                showText
-                ? {
-                    backgroundImage: `linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, .9)),  url(${images[0]})`,
-                    width: "90%",
-                    height: "90%",
-                    padding: "20px",
-                } 
-                : null
-            }  
-            >
-                <h3 data-aos="fade-down" data-aos-easing="ease-in-sine">{title}</h3>
-                <HashLink data-aos="slide-up" data-aos-easing="ease-in-sine" data-aos-delay="300" to="/project"  className='Tertiary_Button' >View Project </HashLink>
-
-            </div>
-        }
-  
+      {
+        stopSpinning ? 
+        <div className='Projects_Container'>
+          {
+            SortedProjects && SortedProjects.map((project, i) =>{ 
+              let images = project.images ? project.images : null
+              let type = Object.keys(project)[0]
+              let title = project.Column2
+              return type === projectFilter||  projectFilter === "All" ? (
+                <ProjectCard 
+                  images={images} 
+                  key={i}
+                  title={title}
+                  id={i}
+                />
+              )
+              : null
+            })
+       
+          }
+        </div>
+        :  <div className='spinner'/>
+      }
+     
     </div>
   )
+   
 }
 
-export default ProjectCard
+export default ProjectSection

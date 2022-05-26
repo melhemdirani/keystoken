@@ -52,20 +52,6 @@ function NavbarItems({scrolled, project, width}) {
                 About Us
             </HashLink>
             <HashLink 
-                to="/BusinessVerticals" 
-                style={
-                    project 
-                    ? {color: "rgba(0,0,0,.6)"} 
-                    : path === '/BusinessVerticals' && scrolled 
-                    ? {color:"#294B81"} 
-                    : scrolled 
-                    ? {color: "rgba(0,0,0,.6)"} 
-                    : {color: "white"}
-                }
-            >
-                Business Verticals
-            </HashLink>
-            <HashLink 
                 to="/projects" 
                 style={
                     project 
@@ -93,6 +79,17 @@ function NavbarItems({scrolled, project, width}) {
             >
                 Contact Us 
             </HashLink>
+            <a 
+                href='/Danash-brochure.pdf' 
+                download 
+                style={
+                    project  || scrolled 
+                    ? {color: "rgba(0,0,0,.6)"} 
+                    : {color: "white"}
+                }
+            >
+                Brochure
+            </a>
         </div>
     );
 }

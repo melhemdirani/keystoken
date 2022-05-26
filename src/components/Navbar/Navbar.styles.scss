@@ -20,7 +20,7 @@
     width: 100vw;
     margin-top: 20px;
     z-index: 999;
-    font-size: 18px;
+    font-size: 1.5rem;
     padding: 10px 0;
     font-weight: 500;
     div{
@@ -63,11 +63,9 @@
 @media only screen and (max-width: 1039px) {
     .Navbar_Container{
         a{
-            font-size: 12px;
             margin: 15px 10px;
         }
         .Navbar_logo{
-            height: 40px;
         }
     }
     
@@ -75,11 +73,10 @@
 @media only screen and (max-width: 821px) {
     .Navbar_Container{
         a{
-            font-size: 12px;
             margin: 15px 10px;
+            font-size: 1.2rem;
         }
         .Navbar_logo{
-            height: 35px;
         }
     }
     
@@ -97,7 +94,7 @@
         flex-direction: column;
         align-items: center;
         position: absolute;
-        justify-content: space-between;
+        justify-content: center;
         max-height: 70vh;
         right: 18px;
         margin: 0;

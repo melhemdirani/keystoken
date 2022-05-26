@@ -1,7 +1,7 @@
 .ContactUs_Container{
     display: flex;
     flex-direction: column;
-    margin: 100px 0 150px 0;
+    margin: 80px 0 150px 0;
     background-image: url(../../assets/images/wave.webp);
     background-color: #3B94D6;
     background-size: cover;
@@ -10,6 +10,7 @@
     text-align: center;
     .sectionTitle{
         margin: 80px 0 50px 0;
+        width: 100%;
         .title_description{
             display: flex;
             align-items: center;
@@ -25,6 +26,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        text-align: left;
     }
     a{
         text-decoration: none;
@@ -34,11 +36,6 @@
     .ContactForm_Container{
         display: flex;
         justify-content: center;
-        .Image{
-            margin: 0 20px;
-            width: 400px;
-            border-radius: 5px;
-        }
         .Firstcolumn{
             display: flex;
             flex-direction: column;
@@ -47,11 +44,17 @@
             .Form{
                 display: flex;
                 flex-direction: column;   
-                textarea, input{
+                label,textarea, input{
                     margin: 10px 0;
                     padding: 10px;
                     border-radius: 20px;
                     border: 1px solid #E7E7E7;
+                    background-color: white;
+                    color: #A9A9A9;
+                    cursor: pointer;
+                    text-align: left;
+                    font-size: 15px;
+
                 }
                 input::placeholder, textarea::placeholder {
                     color: #A9A9A9;
@@ -61,6 +64,23 @@
                     height: 100px;
                     resize: none;
                 }
+                .inputfile {
+                    width: 0.1px;
+                    height: 0.1px;
+                    opacity: 0;
+                    overflow: hidden;
+                    position: absolute;
+                    z-index: -1;
+                }
+                .upload{
+                    height: 20px;
+                    margin-right: 10px;
+                }
+                label{
+                    display: flex;
+                    align-items: center;
+                }
+                
             }
             button{
             }
@@ -71,7 +91,7 @@
 // ----------------- Media Query ------------------- //
 
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 950px) {
     .ContactUs_Container{
         h1{
             font-size: 2.5rem;
@@ -93,6 +113,19 @@
 }
 @media only screen and (max-width: 760px) {
    .ContactUs_Container{
+  
+   }
+}
+@media only screen and (max-width: 600px) {
+   .ContactUs_Container{
+       margin-top: 0;
+    h1{
+        font-size: 1.7rem;
+    }
+    p,a{
+        font-size: .8rem;
+        max-width: 90%;
+    }
     .sectionTitle{
         align-self: center;
         .title_description{
@@ -100,17 +133,6 @@
             align-items: flex-start;
            flex-direction: column;
         }
-    }
-   }
-}
-@media only screen and (max-width: 600px) {
-   .ContactUs_Container{
-    h1{
-        font-size: 1.7rem;
-    }
-    p,a{
-        font-size: .8rem;
-        max-width: 90%;
     }
    }
 }

@@ -5,10 +5,16 @@ import { HashLink } from 'react-router-hash-link';
 
 import useWindowDimensions from '../useWindowDimensions';
 import './ProjectCard.style.scss';
-import dream from '../../assets/images/dream.jpg'
+
+import building from '../../assets/images/building.jpg';
+import infrastructure from '../../assets/images/infrastructure.jpg';
+import road from '../../assets/images/road.jpg';
+import marine from '../../assets/images/marine.jpg';
+import lake from '../../assets/images/lake.jpg';
+import maintenance from '../../assets/images/maintenance.jpg';
 
 
-function ProjectCard({images, title, id}) {
+function ProjectCard({images, title, id, date, type}) {
     useEffect(()=>{
         Aos.init({ 
             duration: 500,
@@ -32,8 +38,20 @@ function ProjectCard({images, title, id}) {
             setShowText(false)
         }
     }
-    let imageArray = images ? images : [dream]
-
+    let imageArray = images 
+        ? images 
+        : type === 'Buildings' 
+        ? [building] 
+        : type === 'Infrastructure' 
+        ? [infrastructure] 
+        : type === 'Roads'
+        ? [road]
+        : type === 'Marine'
+        ? [marine]
+        : type === 'Lakes'
+        ? [lake]
+        : [maintenance]
+     let Title = title.slice(0, 160)
     return  (
     <div 
         className='ProjectCard_Container' 
@@ -64,7 +82,7 @@ function ProjectCard({images, title, id}) {
                  data-aos-easing="ease-in-sine" 
                  data-aos-once={true}
                 >
-                    {title}
+                    {Title}
                 </h4>
                 <HashLink 
                  data-aos={ width > 821 && "slide-up" }

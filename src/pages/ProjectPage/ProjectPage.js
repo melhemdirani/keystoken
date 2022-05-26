@@ -2,19 +2,26 @@ import React, { useRef, useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 import parse from 'html-react-parser';
 
-import { AllProjects } from '../../assets/data';
+import { SortedProjects } from '../../assets/SortedProjects';
 import './ProjectPage.styles.scss';
 import Right from '../../assets/images/right.svg'
 import Left from '../../assets/images/left.svg'
-import dream from '../../assets/images/dream.jpg'
+
+import building from '../../assets/images/building.jpg';
+import infrastructure from '../../assets/images/infrastructure.jpg';
+import road from '../../assets/images/road.jpg';
+import marine from '../../assets/images/marine.jpg';
+import lake from '../../assets/images/lake.jpg';
+import maintenance from '../../assets/images/maintenance.jpg';
 
 function ProjectPage() {
   const [index, setIndex] = useState(0)
 
   let parm = useParams()
   let j = parm.projectid
-  let project = AllProjects[j]
-  let type = Object.keys(project)[0].toUpperCase()
+  let project = SortedProjects[j]
+  let type = Object.keys(project)[0]
+  console.log(type)
   let date = project.Column3
   let date2 = project.Column4
   let title = project.Column2
@@ -23,17 +30,27 @@ function ProjectPage() {
   let text = project.Column7
   let text2 = project.Column8 ? project.Column8 : null
   let text3 = project.Column9 ? project.Column9 : null
-  let images = project.images && project.images
 
-  let imageArray = images ? images : [dream]
-
-  let text4 = text && text.replace(/-/g, "<br /> <li>");
+  let imageArray = project.images ? project.images 
+    : type === 'Buildings' 
+    ? [building] 
+    : type === 'Infrastructure' 
+    ? [infrastructure] 
+    : type === 'Roads'
+    ? [road]
+    : type === 'Marine'
+    ? [marine]
+    : type === 'Lakes'
+    ? [lake]
+    : [maintenance]
+    
+  let text4 = text && text.replace(/- /g, "<br /> <li>");
   let text5 = parse("" + text4)
 
-  let text6 = text2 && text2.replace(/-/g, "<br /> <li>");
+  let text6 = text2 && text2.replace(/- /g, "<br /> <li>");
   let text7 = parse("" + text6)
 
-  let text8 = text3 && text3.replace(/-/g, "<br /> <li>");
+  let text8 = text3 && text3.replace(/- /g, "<br /> <li>");
   let text9 = parse("" + text8)
   const handleImageClick = (i) => {
     setIndex(i)
@@ -84,7 +101,7 @@ function ProjectPage() {
         <p><span>Date: </span><span className='date'>{date} {">"} {date2}</span></p>
         <p><span> Client:</span> {client}</p>
         <p><span> Role:</span> {role}</p>
-        {text && <p>{text5}</p>}
+        {text && <p><span>Description:</span>{" "}{text5}</p>}
         {text2 && <p className='p'>{text7}</p> }
         {text3 && <p className='p'>{text9}</p>}
       </div>

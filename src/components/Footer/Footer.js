@@ -35,7 +35,7 @@ function Footer() {
             </p>
         </div>
         <div className='C2'>
-            <HashLink to='/'>
+            <HashLink to='/#header'>
                 Home
             </HashLink>
             <HashLink to='/aboutus'>
@@ -47,7 +47,7 @@ function Footer() {
             <HashLink scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'center' })} to='/aboutus#vision'>
                Vision
             </HashLink>
-            <HashLink  to='/aboutus#business vertical'>
+            <HashLink  to='/#business verticals' scroll={(el) => el.scrollIntoView({ behavior: 'auto', block: 'center' })}>
                 Business Verticals
             </HashLink>
             <HashLink to='/projects#header'>
@@ -56,6 +56,12 @@ function Footer() {
             <HashLink to='/contact'>
                 Contact Us
             </HashLink>
+            <a 
+                href='/Danash-brochure.pdf' 
+                download
+            >
+                Brochure Download
+            </a>
             <SocialMediaIcons />
         </div>
     </div>

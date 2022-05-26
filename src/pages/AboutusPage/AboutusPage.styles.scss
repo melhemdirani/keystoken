@@ -53,9 +53,9 @@
         .img{
             width: 40vw;
             max-width: 600px;
-            height: 500px;
+            height: auto;
             margin: 0 20px;
-            object-fit: cover;
+            object-fit: contain;
         }
 
     }
@@ -92,7 +92,7 @@
     }
     .description2{
         color: white;
-        background-image: linear-gradient(rgba($color: #2969A7, $alpha: .3), rgba($color: #2969A7, $alpha: .5)),  url('../../assets/images/OTV.jpg');
+        background-image: linear-gradient(rgba($color: #2969A7, $alpha: .3), rgba($color: #2969A7, $alpha: .5)),  url('../../assets/images/dream.jpg');
         padding: 100px 0;
         width: 100%;
         background-position: 50% 100%;
@@ -165,7 +165,7 @@
         .clients{
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: flex-start;
             .images{
                 height: 130px;
                 width: 200px;
@@ -173,17 +173,14 @@
                 margin: 20px 5px;
             }
             p{
-                color: white;
+                color: #294B81;
                 border-radius: 5px;
-                width: 150px;
-                padding: 15px 25px;
+                width: 200px;
                 text-align: center;
-                font-size: .9em;
                 line-height: 1.5em;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background-color: rgba($color: #39379B, $alpha: .9);
                 
             }
         }
@@ -222,6 +219,9 @@
             .clients{
                 .images{
                     height: 100px;
+                    width: 150px;
+                }
+                p{
                     width: 150px;
                 }
             }

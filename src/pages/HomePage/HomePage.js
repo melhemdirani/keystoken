@@ -7,6 +7,7 @@ import Services from '../../components/Services/Services';
 import AboutUs from '../../components/AboutUs/AboutUs';
 import Dream from '../../components/Dream/Dream';
 import OurProjects from '../../components/OurProjects/OurProjects';
+import RoadMap from '../../components/RoadMap/RoadMap';
 
 
 function HomePage() {
@@ -17,7 +18,7 @@ function HomePage() {
       <Info />
       <AboutUs />
       <Dream />
-      <Services />
+      <RoadMap />
       <OurProjects />
     </div>
   )

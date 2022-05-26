@@ -211,14 +211,7 @@ import B488 from  './images/p48B/8.jpg';
 import B489 from  './images/p48B/9.jpg';
 
 import B491 from  './images/p49B/1.jpg';
-import B492 from  './images/p49B/2.jpg';
-import B493 from  './images/p49B/3.jpg';
-import B494 from  './images/p49B/4.jpg';
-import B495 from  './images/p49B/5.jpg';
-import B496 from  './images/p49B/6.JPG';
-import B497 from  './images/p49B/7.jpg';
-import B498 from  './images/p49B/8.jpg';
-import B499 from  './images/p49B/9.jpg';
+import B492 from  './images/p49B/2.JPG';
 
 import B501 from  './images/p50B/1.JPG';
 import B502 from  './images/p50B/2.JPG';
@@ -269,7 +262,9 @@ import I251 from  './images/p25I/1.JPG';
 import I252 from  './images/p25I/2.JPG';
 import I253 from  './images/p25I/3.JPG';
 import I254 from  './images/p25I/4.JPG';
-import I255 from  './images/p25I/5.JPG';
+import I255 from  './images/p25I/5.png';
+import I256 from  './images/p25I/6.JPG';
+import I257 from  './images/p25I/7.JPG';
 
 import I261 from  './images/p26I/1.JPG';
 import I262 from  './images/p26I/2.JPG';
@@ -284,12 +279,6 @@ import I312 from  './images/p31I/2.JPG';
 import I313 from  './images/p31I/3.JPG';
 import I314 from  './images/p31I/4.JPG';
 import I315 from  './images/p31I/5.JPG';
-import I316 from  './images/p31I/6.JPG';
-import I317 from  './images/p31I/7.JPG';
-import I318 from  './images/p31I/8.JPG';
-import I319 from  './images/p31I/9.JPG';
-import I3110 from  './images/p31I/10.JPG';
-import I3111 from  './images/p31I/11.png';
 
 import I391 from  './images/p39I/1.jpg';
 import I392 from  './images/p39I/2.jpg';
@@ -357,16 +346,24 @@ export const clients= [
   {
       type: "GOVERNMENTAL INSTITUTIONS",
       allclients: [
-          "COUNCIL OF DEVELOPMENT AND RECONSTRUCTION",
-          "MINISTRY OF ENERGY AND WATER", 
-          "MINISTRY OF PUBLIC WORKS AND TRASNPORATION",
-          "MINISTRY OF EDUCATINO AND HIGHER EDUCATION", 
-          "MINISTRY OF DEFENSE", 
-          "MINISTRY OF AGRICULTURE", 
-          "SOUTH COUNCIL", 
-          "CENTRAL BANK OF LEBANON", 
-          "OGERO", 
-          "MUNICIPALITIES" 
+        "MINISTRY OF AGRICULTURE", 
+        "CENTRAL BANK OF LEBANON", 
+        "COUNCIL OF DEVELOPMENT AND RECONSTRUCTION",
+        "MINISTRY OF DEFENSE", 
+        "MINISTRY OF ENERGY AND WATER", 
+        "OGERO", 
+        "MINISTRY OF PUBLIC WORKS AND TRASNPORATION",
+        "MINISTRY OF EDUCATINO AND HIGHER EDUCATION", 
+        "SOUTH COUNCIL", 
+        "MUNICIPALITIES",
+        "DIRECTORATE OF GENERAL SECURITY",
+        "ESTABLISHMENT OF THE WATER OF BEIRUT & MOUNT LEBANON",
+        "DIRECTORATE OF INTERNAL SECURITY FORCES",
+        "HIGH RELIEF AUTHORITY",
+        "NORTH LEBANON WATER ESTABLISHEMENT",
+        "THE NATIONAL INSTITUTION OF LITANI RIVER",
+        "THE CENTRAL FUND FOR THE DISPLACED",
+        "SOUTH LEBANON WATER ESTABLISHEMENT",
       ],
       images: [
         gover1  ,
@@ -391,31 +388,6 @@ export const clients= [
   },
   {
       type: "NON GOVERNMENTAL ORGANISATIONS (NGO)",
-      allclients: [
-        "ACTION AGAINST HUNGER",
-        "AVSI",
-        "CONCERN WORLDWIDE",
-        "GIZ",
-        "HABITAT FOR HUMANITY",
-        "ICRC",
-        "IRC",
-        "NRC",
-        "INTERSOS",
-        "IOCC",
-        "ISLAMIC RELIEF",
-        "LEB RELIEF",
-        "MEDAIR",
-        "PALESTINE RED CRESCENT SOCIETY",
-        "RELIEF INTERNATIONAL",
-        "UN PONTE PER (UPP)",
-        "WORLD VISION",
-        "TAAWON",
-        "CARE",
-        "ACTED",
-        "COOPERATIVE HOUSING FOUNDATION",
-        "CATALAN",
-        "CHEMICS",
-      ],
       images:[
         ngo1,
         ngo2,
@@ -444,14 +416,6 @@ export const clients= [
   },
   {
       type: "UNITED NATIONS",
-      allclients: [
-          "UNIFIL",
-          "UNDP",
-          "UNICEF",
-          "UN HABITAT",
-          "UNRWA",
-          "FAO"
-      ],
       images:[
         un1,
         un2,
@@ -475,33 +439,33 @@ export const clients= [
   }
 ]
 
-export const projects = [
-  {
-    "Operation and Maintenance": 2,
-    id: 242,
-    "Column2": "Operation and Maintenance Services for the Lebanese University - Rafik Hariri Campus in Hadath",
-    "Column3": "23/01/2017",
-    "Column4": "31/03/2020",
-    "Column5": "Council for Development & Reconstruction (CDR)",
-    "Column6": "Main Contractor",
-    "Column7": "One of the largest facility management projects in MENA region. \nIt consists of:\n-\t600 personnel\t-\t705 000 m2 total area \n-\t300 000 m2 built-up area\t-\t320 000 m2 of landscaped area\n-\t1030 dormitories rooms\t-\tOlympic swimming and diving pools\n-\t14 sports courts\t-\tUtility tunnel of length of 1800m\n-\t25 000 students\t-\t1800 m3 of daily water consumption\n-\t16 000 BMS points\t-\tCooling capacity of 10 000 T.R\n-\t5 000 access points\t-\tHeating capacity of 4000 HP\n-\t360 telephone lines\t-\t20 MW of electrical load (+6MW emergency power)",
-    images: [
-      M21,
-      M22, 
-      M23,
-      M24,
-      M25,
-      M26,
-      M27,
-      M28,
-      M29,
-      M210,
-    
-    ], 
+export const  projects = [
+ {
+  "Operation and Maintenance": 2,
+  id: 64,
+  "Column2": "Operation and Maintenance Services for the Lebanese University - Rafik Hariri Campus in Hadath",
+  "Column3": "23/01/2017",
+  "Column4": "31/03/2020",
+  "Column5": "Council for Development & Reconstruction (CDR)",
+  "Column6": "Main Contractor",
+  "Column7": "One of the largest facility management projects in MENA region. \nIt consists of:\n-\t600 personnel\t-\t705 000 m2 total area \n-\t300 000 m2 built-up area\t-\t320 000 m2 of landscaped area\n-\t1030 dormitories rooms\t-\tOlympic swimming and diving pools\n-\t14 sports courts\t-\tUtility tunnel of length of 1800m\n-\t25 000 students\t-\t1800 m3 of daily water consumption\n-\t16 000 BMS points\t-\tCooling capacity of 10 000 T.R\n-\t5 000 access points\t-\tHeating capacity of 4000 HP\n-\t360 telephone lines\t-\t20 MW of electrical load (+6MW emergency power)",
+  images: [
+    M21,
+    M22,
+    M23,
+    M24,
+    M25,
+    M26,
+    M27,
+    M28,
+    M29,
+    M210,
+   
+  ], 
   },
   {
     "Marine": 4,
-    id: 234,
+    id: 126,
     "Column2": "Cultural Heritage and Urban Development Project - Rehabilitation of Historic City Centers and Urban Infrastructures Improvement - Tyr Phase II - Zone Du Port",
     "Column3": "04/02/2010",
     "Column4": "09/06/2016",
@@ -523,7 +487,7 @@ export const projects = [
   },
   {
     "Roads": 24,
-    id: 216,
+    id: 133,
     "Column2": "Rehabilitation of Tyr - Naqoura Road",
     "Column3": "14/09/2005",
     "Column4": "21/10/2014",
@@ -546,7 +510,7 @@ export const projects = [
   },
   {
     "Infrastructure": 21,
-    id: 20,
+    id: 143,
     "Column2": "Design, Build and Turnkey of Sour Wastewater Treatment Plant Project",
     "Column3": "11/01/2010",
     "Column4": "31/08/2013",
@@ -575,7 +539,7 @@ export const projects = [
   },
   {
     "Buildings": 50,
-    id: 132,
+    id: 145,
     "Column2": "Reconstruction of Naher El Bared Palestine Refugee Camp Residential and Non Residential Units, Package 2 ",
     "Column3": "19/07/2010",
     "Column4": "06/04/2013",
@@ -593,7 +557,7 @@ export const projects = [
   },
   {
     "Infrastructure": 31,
-    id: 24,
+    id: 129,
     "Column2": "Jabal Amel Water Supply ",
     "Column3": "16/10/2009",
     "Column4": "19/11/2015",
@@ -607,12 +571,6 @@ export const projects = [
       I313,
       I314,
       I315,
-      I316,
-      I317,
-      I318,
-      I319,
-      I3110,
-      I3111,
     ]
   },
 ]
@@ -880,6 +838,8 @@ export  const AllProjects = [
     I253,
     I254,
     I255,
+    I256,
+    I257,
   ]
  },
  {
@@ -952,12 +912,6 @@ export  const AllProjects = [
     I313,
     I314,
     I315,
-    I316,
-    I317,
-    I318,
-    I319,
-    I3110,
-    I3111,
   ]
  },
  {
@@ -1979,13 +1933,6 @@ export  const AllProjects = [
   images:[
     B491,
     B492,
-    B493,
-    B494,
-    B495,
-    B496,
-    B497,
-    B498,
-    B499,
   ]
   },
  {
@@ -2295,7 +2242,7 @@ export  const AllProjects = [
   "Buildings": 81,
   "Column2": "Rehabilitation Project of 3 Innovation Labs (Hadath, Nabatieh & Tripoli)",
   "Column3": "12/05/2020",
-  "Column4": "Nabatiyeh: 22/09/2020\n\nTripoli: 02/11/2020\n\nHadath: 01/12/2020",
+  "Column4": "01/12/2020",
   "Column5": "UNICEF",
   "Column6": "Main Contractor",
   "Column7": "The works included:\n1. Civil, Structural & Architecture works:\n- Demolishing and removal of debris\n- Non structural columns\n- Masonry\n- Metal works\n- Wood works\n- Aluminium works\n- Finishies\n- Specialties\n\n2. Mechanical Engineering Services:\n- Below ground drainage\n- Sanitary, vent, waste & rain water pipe work installation\n- Piped systems (Liquids)\n- Fire protection\n- Sanitary fixtures\n- AC system\n- Mechanical equipments",
@@ -2445,7 +2392,7 @@ export  const AllProjects = [
   "Column5": "United Nations Development Programme (UNDP)",
   "Column6": "Main Contractor",
   "Column7": "The works includes:\n1. Architecture works:\n- Siteworks\n- Masonry\n- Wood and plastic\n- Thermal & moisture\n- Doors & windows\n- Finishing\n- General purpose equipment & furniture\n\n2. Mechanical works:\n- Drainage system\n- Sanitary fixtures\n- Water supply system\n- AC and Ventilation\n- Medical Gases\n\n3. Electrical works:\n- Fire detection system and appliances notification",
-  "Column8":"_ Access control system\n- Intercom system\n- Nurse call system\n- Video surveillance system\n- SMATV system\n- Structure cabling and communication systems\n- Raceway & boxes\n- Interior lighting\n- Panel boards\n- MCPs\n- Low voltage power conductors and cables\n- Cable trunk\n- Wiring devices\n\n4. Patient lift"
+  "Column8":"-Access control system\n- Intercom system\n- Nurse call system\n- Video surveillance system\n- SMATV system\n- Structure cabling and communication systems\n- Raceway & boxes\n- Interior lighting\n- Panel boards\n- MCPs\n- Low voltage power conductors and cables\n- Cable trunk\n- Wiring devices\n\n4. Patient lift"
  },
  {
   "Buildings": 98,
@@ -2473,7 +2420,7 @@ export  const AllProjects = [
   "Column5": "Council for Development & Reconstruction (CDR)",
   "Column6": "Sub-contractor",
   "Column7": "The works include:\n- Demolition work\n- Excavation\n- Fences and gates restoration\n- Cast-in-Place concrete\n- Unit masonry assemblies\n- Mortat placed stone assemblies\n- Masonry restoration and cleaning\n- Structural steel\n- Metal fabrication\n- Framing and Sheathing\n- Wood decking\n- Roof maintenance and repairs\n- Standard steel doors\n- Flush wood doors\n- Wood and plastic door restoration\n- Aluminium doors and windows\n- Wood windows\n- Window restoration and replacement",
-  "Column8": "_ Glazing\n- Portland cement plaster\n- Lime plaster\n- Tile\n- Acoustical ceilings\n- Stone flooring\n- Sheet carpet\n- Paints and coatings\n- Exterior signage\n- Interior signage\n- Lockers\n- Sun shades\n- Projection screens\n- Cleaning and disposal equipment, Residential Equipment, Office Equipment\n- Window shades\n- Institutional furniture\n- Prefabricated rooms\n- Mechanical works\n- Electrical installations"
+  "Column8": "- Glazing\n- Portland cement plaster\n- Lime plaster\n- Tile\n- Acoustical ceilings\n- Stone flooring\n- Sheet carpet\n- Paints and coatings\n- Exterior signage\n- Interior signage\n- Lockers\n- Sun shades\n- Projection screens\n- Cleaning and disposal equipment, Residential Equipment, Office Equipment\n- Window shades\n- Institutional furniture\n- Prefabricated rooms\n- Mechanical works\n- Electrical installations"
  },
  {
   "Buildings": 101,
@@ -2483,7 +2430,7 @@ export  const AllProjects = [
   "Column5": "Council for Development & Reconstruction (CDR)",
   "Column6": "Sub-contractor",
   "Column7": "The works included: \n1. Civil, Structural and Architectural works:\n- Site preparation and demolition\n- External works\n- Concrete works\n- Masonry\n- Metal works\n- Joinery works\n- Thermal and moisture protection\n- Door and windows\n- Finishes\n- Specialties\n\n2. Mechanical Engineering Services:\n- Dismantling, removal and relocation of E/M items\n- Below ground drainage\n- Sanitary, waste and rain water pipe work installation\n- Piped systems (Liquids)\n- Ventilation",
-  "Column8": "_ Fire protection\n- Water treatment\n- Sanitary fixtures\n- Thermal insulation\n\n3. Electrical Engineering Services:\n- Distribution and final branch circuit panel boards\n- Conduits, wireways, supporting systems and related accessories\n- Wiring devices and disconnect\n- General lighting installation\n- Bell with wiring\n- UPS"
+  "Column8": "- Fire protection\n- Water treatment\n- Sanitary fixtures\n- Thermal insulation\n\n3. Electrical Engineering Services:\n- Distribution and final branch circuit panel boards\n- Conduits, wireways, supporting systems and related accessories\n- Wiring devices and disconnect\n- General lighting installation\n- Bell with wiring\n- UPS"
  },
  {
   "Buildings": 102,
@@ -2520,7 +2467,7 @@ export  const AllProjects = [
   "Column5": "United Nations Development Programme (UNDP)",
   "Column6": "Main Contractor",
   "Column7": "Works will be implemented in the Emergency and Radiology Departments of the hospital and roof.\n\nThe works included:\n1. Architecture works:\n- Siteworks\n- Concrete\n- Masonry\n- Metal\n- Wood and plastics\n- Thermal and mositure\n- Doors and windows\n- Finsihes\n- Furnishings \n\n2. Mechanical works:\n- Drainage system\n- Sanitary fixtures\n- Water supply System\n- AC and ventilation",
-  "Column8": "_ Fire fighting\n- Medical gases\n\n3. Electrical works:\n- Fire detection system and appliances notifications\n- Access control system\n- Intercom system\n- Nurse call system\n- Video surveillance system\n- SMATV system\n- Structure cabling and communication systems\n- Main LV connection\n- Earthing system\n- Raceway and boxes\n- Interior lighting\n- Switch boards and panel boards\n- Low voltage power conductors and cables\n- Cable trunk and cable trays\n- Wiring devices"
+  "Column8": "- Fire fighting\n- Medical gases\n\n3. Electrical works:\n- Fire detection system and appliances notifications\n- Access control system\n- Intercom system\n- Nurse call system\n- Video surveillance system\n- SMATV system\n- Structure cabling and communication systems\n- Main LV connection\n- Earthing system\n- Raceway and boxes\n- Interior lighting\n- Switch boards and panel boards\n- Low voltage power conductors and cables\n- Cable trunk and cable trays\n- Wiring devices"
   
  },
  {
@@ -2558,7 +2505,7 @@ export  const AllProjects = [
   "Column5": "Ministry of Education and Higher Education",
   "Column6": "Main Contractor",
   "Column7": "The works included:\n1. Civil, Structural and Architectural Works:\n- Site preparation and demolition\n- External works\n- Concrete Works\n- Masonry\n- Metal works\n- Wood works\n- Thermal and moisture protection\n- Roof waterproofing\n- Door and windows\n- Finishes\n- Specialties\n- Equipment\n\n2. Mechanical Engineering Services:\n- Below ground drainage\n- Sanitary, waste and rain water pipe work installation\n- Piped systems (Liquids)",
-  "Column8": "_ General boiler plant\n- Ventilation\n- Fire protection\n- Water treatment\n- Sanitary fixtures\n- Thermal insulation\n- Gas services\n\n3. Electrical Engineering Services:\n- Basic electrical requirements\n- Distribution, subdistribution and final branch circuit panel boards\n- Conduits, wireways, supporting systems and related accessories\n- Wiring devices and disconnects\n- General lightning installation\n- Earthing system\n- Lightning protection\n- Fire alarm system, Telephone system, Data System\n- UPS, CCTV System, Solar system, Bell system\n- Convey Equipments - Lifts"
+  "Column8": "- General boiler plant\n- Ventilation\n- Fire protection\n- Water treatment\n- Sanitary fixtures\n- Thermal insulation\n- Gas services\n\n3. Electrical Engineering Services:\n- Basic electrical requirements\n- Distribution, subdistribution and final branch circuit panel boards\n- Conduits, wireways, supporting systems and related accessories\n- Wiring devices and disconnects\n- General lightning installation\n- Earthing system\n- Lightning protection\n- Fire alarm system, Telephone system, Data System\n- UPS, CCTV System, Solar system, Bell system\n- Convey Equipments - Lifts"
  },
  {
   "Buildings": 110,
@@ -2568,7 +2515,7 @@ export  const AllProjects = [
   "Column5": "Ministry of Education and Higher Education",
   "Column6": "Main Contractor",
   "Column7": "The works included:\n1. Civil, Structural and Architectural Works:\n- Site preparation and demolition\n- External works\n- Concrete Works\n- Masonry\n- Metal works\n- Wood works\n- Thermal and moisture protection\n- Roof waterproofing\n- Door and windows\n- Finishes\n- Specialties\n- Equipment\n\n2. Mechanical Engineering Services:\n- Below ground drainage\n- Sanitary, waste and rain water pipe work installation\n- Piped systems (Liquids)",
-  "Column8": "_ General boiler plant\n- Ventilation\n- Fire protection\n- Water treatment\n- Sanitary fixtures\n- Thermal insulation\n- Gas services\n\n3. Electrical Engineering Services:\n- Basic electrical requirements\n- Distribution, subdistribution and final branch circuit panel boards\n- Conduits, wireways, supporting systems and related accessories\n- Wiring devices and disconnects\n- General lightning installation\n- Earthing system\n- Lightning protection\n- Fire alarm system, Telephone system, Data System\n- UPS, CCTV System, Solar system, Bell system\n- Convey Equipments - Lifts"
+  "Column8": "- General boiler plant\n- Ventilation\n- Fire protection\n- Water treatment\n- Sanitary fixtures\n- Thermal insulation\n- Gas services\n\n3. Electrical Engineering Services:\n- Basic electrical requirements\n- Distribution, subdistribution and final branch circuit panel boards\n- Conduits, wireways, supporting systems and related accessories\n- Wiring devices and disconnects\n- General lightning installation\n- Earthing system\n- Lightning protection\n- Fire alarm system, Telephone system, Data System\n- UPS, CCTV System, Solar system, Bell system\n- Convey Equipments - Lifts"
  },
  {
   "Roads": 1,

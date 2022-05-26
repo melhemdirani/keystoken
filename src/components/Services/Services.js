@@ -26,7 +26,7 @@ function Services() {
         },
         {
             image: Transport,
-            title: "Ministry of Public works II Transportation", 
+            title: "Ministry of Public works & Transportation", 
             text: "First degree for Roads and Buildings projects"
         }, 
         {

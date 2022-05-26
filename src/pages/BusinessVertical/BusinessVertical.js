@@ -14,7 +14,6 @@ function BusinessVertical() {
             </HashLink>
             <p>Projects</p>
             </div>
-            <h1>Business Verticals</h1>
         </div>
         <RoadMap />
     </div>

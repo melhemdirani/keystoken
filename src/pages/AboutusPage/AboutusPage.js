@@ -4,11 +4,10 @@ import 'aos/dist/aos.css';
 import Aos from 'aos';
 
 import './AboutusPage.styles.scss';
-import construction from '../../assets/images/cover2.png'
+import construction from '../../assets/images/epc.png'
 import Vision from '../../assets/images/Vision.jpg'
 import DropDown from './DropDown';
 import { clients } from '../../assets/data';
-import RoadMap from '../../components/RoadMap/RoadMap'
 import Services from '../../components/Services/Services';
 
 function AboutusPage() {
@@ -31,7 +30,7 @@ function AboutusPage() {
         <div className='row1' id='about'>
             <img alt='' src={construction} className='img' />
             <div className='description reduced'>
-                <h2>We Are Danash Contracting</h2>
+                <h2>WE ARE DANASH CONTRACTING AND TRADING COMPANY</h2>
                 <p>Danash Contracting & Trading Co. is a Civil, Mechanical, Electrical & Instrumentation (CMEI) EPC contractor. </p>
                 <p>The company, now part of D Holding Group, is originally a family business that was founded in the early 1960s by Mr. Hassan DANASH. </p>
                 <p>The company gained its success through extensive experience of more than 60 years securing the trust of the public and private sectors. The expertise and knowledge in the business were broadened, and new talents were brought to widen the perspectives and the capabilities of the company. </p>
@@ -63,7 +62,7 @@ function AboutusPage() {
             <p>Danash works with a large number of nationally & internationally renowned organizations from public and private sectors.</p>
             {
                 clients.map((item, i) => 
-                <DropDown show={true} type={item.type} images={item.images}  key={i}/>
+                <DropDown show={true} type={item.type} images={item.images} clients={item.allclients}  key={i}/>
                 )
             }
         </div>

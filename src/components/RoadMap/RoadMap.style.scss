@@ -1,9 +1,16 @@
 .RoadMap_Container{
-    margin: 50px 0 100px 0;
-    padding: 0 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 280px);
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+    .cards_container{
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+  
     p{
         width: 470px;
 
@@ -12,12 +19,22 @@
         margin-left: 80px;
         margin-bottom: -80px;
     }
+    h2{
+        color: #294B81;
+    }
 }
 // ----------------- Media Query ------------------- //
 
 @media only screen and (max-width: 600px) {
     .RoadMap_Container{
         flex-direction: column;
+        margin-bottom: 50px;
+        .cards_container{
+            margin: 0;
+        }
+        h2{
+            margin-bottom: 100px;
+        }
     }
     
 }
