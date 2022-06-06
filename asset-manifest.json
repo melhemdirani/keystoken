@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/keystoken/static/css/main.53d56442.css",
-    "main.js": "/keystoken/static/js/main.63009ff5.js",
+    "main.css": "/keystoken/static/css/main.bd2c0b1f.css",
+    "main.js": "/keystoken/static/js/main.51c533d0.js",
     "static/media/asphaltPlant.mp4": "/keystoken/static/media/asphaltPlant.75868923a61eb8a29b4f.mp4",
     "static/media/5.png": "/keystoken/static/media/5.035a67a11800e324f772.png",
     "static/media/2.JPG": "/keystoken/static/media/2.4d76aebb6e4a1d7d710d.JPG",
@@ -65,6 +65,7 @@
     "static/media/23.jpg": "/keystoken/static/media/23.daa3dcfa6bda7373ea3d.jpg",
     "static/media/18.JPG": "/keystoken/static/media/18.cff0400ca2231f6f37f3.JPG",
     "static/media/epc.png": "/keystoken/static/media/epc.e59af0e71f72a452dbc1.png",
+    "static/media/404.webp": "/keystoken/static/media/404.738e710a8cd662bc83d2.webp",
     "static/media/17.JPG": "/keystoken/static/media/17.9101b805fbcdceeb80a1.JPG",
     "static/media/23.JPG": "/keystoken/static/media/23.c70d7c189a110b2cdae2.JPG",
     "static/media/15.jpg": "/keystoken/static/media/15.0a7d8f944541ab288937.jpg",
@@ -82,7 +83,6 @@
     "static/media/building.jpg": "/keystoken/static/media/building.fe50874483a7eb967620.jpg",
     "static/media/gover17.png": "/keystoken/static/media/gover17.59191f730cc18ea7091d.png",
     "static/media/lake.jpg": "/keystoken/static/media/lake.137d2b63de744e75ab83.jpg",
-    "static/media/contact.jpg": "/keystoken/static/media/contact.1540a9eaaba5cfa99e27.jpg",
     "static/media/arab5.png": "/keystoken/static/media/arab5.74d87a2e668370638040.png",
     "static/media/road.jpg": "/keystoken/static/media/road.41d40a33a031e4df7e17.jpg",
     "static/media/arab7.png": "/keystoken/static/media/arab7.418238d6193496b2880d.png",
@@ -114,6 +114,7 @@
     "static/media/accommodation.svg": "/keystoken/static/media/accommodation.4504e0b9af05c07d6a5c6a7cb2d8bd4a.svg",
     "static/media/asphalt.svg": "/keystoken/static/media/asphalt.3a8b27de44768e2f7960d601c9c92313.svg",
     "static/media/arab3.png": "/keystoken/static/media/arab3.0251ad3c50dc4d70225d.png",
+    "static/media/contact.webp": "/keystoken/static/media/contact.7b6c60b3ead5b8f36220.webp",
     "static/media/brick.svg": "/keystoken/static/media/brick.81b5ce63f476a67c43f8f6a0b024ddb5.svg",
     "static/media/ngo19.png": "/keystoken/static/media/ngo19.c1d71aab7e25832746bb.png",
     "static/media/ngo6.png": "/keystoken/static/media/ngo6.e9db3eba5b928f3ed4f9.png",
@@ -140,11 +141,11 @@
     "static/media/right.svg": "/keystoken/static/media/right.07c8d32b63b93bb3898904970bb82187.svg",
     "static/media/left.svg": "/keystoken/static/media/left.a721effc70899b4ce64656d844ecf128.svg",
     "static/media/menu.svg": "/keystoken/static/media/menu.e8690d40fb9878b3e1e4f542080ddd15.svg",
-    "main.53d56442.css.map": "/keystoken/static/css/main.53d56442.css.map",
-    "main.63009ff5.js.map": "/keystoken/static/js/main.63009ff5.js.map"
+    "main.bd2c0b1f.css.map": "/keystoken/static/css/main.bd2c0b1f.css.map",
+    "main.51c533d0.js.map": "/keystoken/static/js/main.51c533d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.53d56442.css",
-    "static/js/main.63009ff5.js"
+    "static/css/main.bd2c0b1f.css",
+    "static/js/main.51c533d0.js"
   ]
 }
